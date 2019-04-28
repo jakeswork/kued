@@ -2,6 +2,17 @@
 
 exports[`The Home instance when called with default props should render without throwing errors 1`] = `
 <div>
-  Hello, World!
+  <Jss(Text)
+    bold={false}
+    caption={false}
+    h1={true}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={false}
+    style={Object {}}
+  >
+    Hello, World
+  </Jss(Text)>
 </div>
 `;

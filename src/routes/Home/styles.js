@@ -1,1 +1,5 @@
-export default {};
+export default {
+  root: {
+    fontSize: 12,
+  },
+};

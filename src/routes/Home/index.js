@@ -1,3 +1,6 @@
-import Home from './Home';
+import withStyles from 'react-jss';
 
-export default Home;
+import Home from './Home';
+import styles from './styles';
+
+export default withStyles(styles)(Home);
