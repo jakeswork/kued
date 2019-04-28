@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Text instance When rendered with default props should render a <p /> tag 1`] = `
+<p
+  style={Object {}}
+/>
+`;
+
+exports[`The Text instance when rendered with caption set to true should render a <caption /> tag 1`] = `
+<span
+  style={Object {}}
+/>
+`;
+
+exports[`The Text instance when rendered with h1 set to true should render a <h1 /> tag 1`] = `
+<h1
+  style={Object {}}
+/>
+`;
+
+exports[`The Text instance when rendered with h2 set to true should render a <h2 /> tag 1`] = `
+<h2
+  style={Object {}}
+/>
+`;
+
+exports[`The Text instance when rendered with h3 set to true should render a <h3 /> tag 1`] = `
+<h3
+  style={Object {}}
+/>
+`;
+
+exports[`The Text instance when rendered with h4 set to true should render a <h4 /> tag 1`] = `
+<h4
+  style={Object {}}
+/>
+`;
+
+exports[`The Text instance when rendered with h5 set to true should render a <h5 /> tag 1`] = `
+<h5
+  style={Object {}}
+/>
+`;
