@@ -3,7 +3,9 @@ import { shallow } from 'enzyme';
 
 import Home from '../Home';
 
-const defaultProps = {};
+const defaultProps = {
+  classes: {},
+};
 
 describe('The Home instance', () => {
   describe('when called with default props', () => {

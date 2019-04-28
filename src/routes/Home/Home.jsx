@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Home = () => (
-  <div>Hello, World!</div>
+import propTypes from './types';
+
+const Home = ({ classes }) => (
+  <div className={classes.root}>Hello, World!</div>
 );
+
+Home.propTypes = propTypes;
 
 export default Home;
