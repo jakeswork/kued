@@ -6,6 +6,7 @@ import 'typeface-open-sans';
 import 'typeface-quicksand';
 
 import './reset.css';
+import './base.css';
 import Home from './routes/Home';
 
 const theme = {
