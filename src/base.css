@@ -1,0 +1,28 @@
+*::selection {
+  color: #fff;
+  background: #fc3a3e;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 106.25%;
+  quotes: "“" "”";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+body {
+  letter-spacing: -.022em;
+  background-color: #fff;
+  font-style: normal;
+  font-synthesis: none;
+  font-feature-settings: 'kern';
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr;
+  text-align: left;
+}

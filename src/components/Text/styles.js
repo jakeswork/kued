@@ -1,40 +1,53 @@
 const defaultStyles = theme => ({
   color: theme.textPrimary,
   fontFamily: theme.fontFamily,
+  fontWeight: 600,
 });
 
 export default theme => ({
   h1: {
     ...defaultStyles(theme),
-    fontWeight: 'bold',
-    fontSize: 96,
-    fontFamily: 'Quicksand,Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol',
+    fontSize: 80,
+    lineHeight: '1.05em',
+    letterSpacing: '-.09em',
   },
   h2: {
     ...defaultStyles(theme),
-    fontWeight: 'bold',
-    fontSize: 80,
-    fontFamily: 'Quicksand,Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol',
+    fontSize: 64,
+    lineHeight: '1.0625',
+    letterSpacing: '-.009em',
   },
   h3: {
     ...defaultStyles(theme),
-    fontSize: 64,
+    fontSize: 32,
+    lineHeight: '1.125',
+    letterSpacing: '.004em',
   },
   h4: {
     ...defaultStyles(theme),
-    fontSize: 48,
+    fontSize: 24,
+    lineHeight: '1.16667',
+    letterSpacing: '.009em',
   },
   h5: {
     ...defaultStyles(theme),
-    fontSize: 32,
+    fontSize: 21,
+    lineHeight: '1.38105',
+    fontWeight: 400,
+    letterSpacing: '.011em',
   },
   caption: {
     ...defaultStyles(theme),
     fontSize: 12,
-    fontWeight: 'bold',
+    lineHeight: '1.33341',
+    fontWeight: 400,
+    letterSpacing: '-.01em',
   },
   p: {
     ...defaultStyles(theme),
-    fontSize: 16,
+    fontSize: 17,
+    lineHeight: '1.47059',
+    fontWeight: 400,
+    letterSpacing: '-.022em',
   },
 });
