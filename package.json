@@ -10,8 +10,8 @@
     "react-jss": "^8.6.1",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
-    "typeface-open-sans": "^0.0.54",
-    "typeface-quicksand": "^0.0.71"
+    "typeface-karla": "^0.0.72",
+    "typeface-open-sans": "^0.0.54"
   },
   "scripts": {
     "start": "react-scripts start",

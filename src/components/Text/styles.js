@@ -9,15 +9,15 @@ export default theme => ({
     ...defaultStyles(theme),
     fontSize: 80,
     lineHeight: '1.05em',
-    letterSpacing: '-.015em',
-    fontFamily: `Quicksand,${theme.fontFamily}`,
+    letterSpacing: '-.09em',
+    fontFamily: `Karla,${theme.fontFamily}`,
   },
   h2: {
     ...defaultStyles(theme),
     fontSize: 64,
     lineHeight: '1.0625',
     letterSpacing: '-.009em',
-    fontFamily: `Quicksand,${theme.fontFamily}`,
+    fontFamily: `Karla,${theme.fontFamily}`,
   },
   h3: {
     ...defaultStyles(theme),

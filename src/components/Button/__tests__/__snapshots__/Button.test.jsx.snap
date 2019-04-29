@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Button instance when called with default properties should render without throwing errors 1`] = `
+<button
+  type="button"
+/>
+`;

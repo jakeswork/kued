@@ -3,12 +3,13 @@ html {
   -webkit-text-size-adjust: 100%;
   font-size: 106.25%;
   quotes: "“" "”";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 body {
-  font-size: 17px;
-  line-height: 1.47059;
-  font-weight: 400;
   letter-spacing: -.022em;
   background-color: #fff;
   font-style: normal;

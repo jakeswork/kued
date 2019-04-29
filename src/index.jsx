@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'react-jss';
 import 'typeface-open-sans';
-import 'typeface-quicksand';
+import 'typeface-karla';
 
 import './reset.css';
 import './base.css';
