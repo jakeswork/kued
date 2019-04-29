@@ -1,7 +1,6 @@
 const defaultStyles = theme => ({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
+  display: 'inline-block',
+  textAlign: 'center',
   position: 'relative',
   padding: '.84375rem 1.5rem .65625rem',
   borderRadius: '.25rem',
@@ -34,5 +33,6 @@ export default theme => ({
     WebkitBoxShadow: 0,
     boxShadow: 0,
     textTransform: 'uppercase',
+    background: 'transparent',
   },
 });
