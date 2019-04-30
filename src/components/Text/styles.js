@@ -50,12 +50,15 @@ export default theme => ({
     fontWeight: 400,
     letterSpacing: '-.022em',
   },
-  '@media (max-width: 375px)': {
+  [theme.media.mobile]: {
     h1: {
       fontSize: 48,
     },
     h2: {
       fontSize: 40,
+    },
+    h4: {
+      fontSize: 20,
     },
   },
 });

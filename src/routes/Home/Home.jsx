@@ -12,7 +12,7 @@ const Home = ({ classes }) => (
       <Text h1 style={{ color: 'white' }}>
         Elevate your arena experience.
       </Text>
-      <Text h4 style={{ color: '#b1a0a0', marginTop: 16, textAlign: 'center' }}>
+      <Text h4 style={{ color: '#b1a0a0', margin: 16, textAlign: 'center' }}>
         With the most up-to-date live meta data, we allow you to
         <br />
         predict opponents and open up the best opportunities.

@@ -14,6 +14,9 @@ const theme = {
   colorSecondary: '#17233a',
   textPrimary: '#2b090a',
   textSecondary: '#b1a0a0',
+  media: {
+    mobile: '@media (max-width: 375px)',
+  },
 };
 
 const App = () => (
