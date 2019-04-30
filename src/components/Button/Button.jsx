@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { propTypes, defaultProps } from './types';
 
@@ -7,6 +8,7 @@ const Button = ({
   secondary,
   flat,
   children,
+  link,
   ...props
 }) => {
   let className = classes.button;
@@ -14,6 +16,8 @@ const Button = ({
   if (secondary) className = classes.secondary;
 
   if (flat) className = classes.flat;
+
+  if (link) return <Link role="button" {...props} className={className} to={link}>{ children }</Link>;
 
   return <button type="button" {...props} className={className}>{ children }</button>;
 };

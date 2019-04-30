@@ -1,5 +1,6 @@
 const defaultStyles = theme => ({
   display: 'inline-block',
+  textDecoration: 'none',
   textAlign: 'center',
   position: 'relative',
   padding: '.84375rem 1.5rem .65625rem',

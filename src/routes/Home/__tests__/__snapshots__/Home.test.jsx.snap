@@ -43,12 +43,14 @@ exports[`The Home instance when called with default props should render without 
     <div>
       <Jss(Button)
         flat={false}
+        link="/feed"
         secondary={false}
       >
         Get Started
       </Jss(Button)>
       <Jss(Button)
         flat={false}
+        link="/contact"
         secondary={true}
         style={
           Object {

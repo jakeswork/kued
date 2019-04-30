@@ -16,13 +16,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.test.jsx",
-      "!<rootDir>/node_modules/"
+      "src/**/*.jsx",
+      "!src/**/__generated__/**"
     ],
     "coverageThreshold": {
       "global": {

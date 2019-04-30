@@ -18,8 +18,8 @@ const Home = ({ classes }) => (
         predict opponents and give your teams the best opportunities.
       </Text>
       <div className={classes.buttonsContainer}>
-        <Button>Get Started</Button>
-        <Button secondary style={{ color: 'white' }}>Roadmap</Button>
+        <Button link="/feed">Get Started</Button>
+        <Button secondary style={{ color: 'white' }} link="/contact">Roadmap</Button>
       </div>
     </div>
   </div>

@@ -9,6 +9,7 @@ exports[`The TopNavigation instance When called with default properties should r
   <div>
     <Jss(Button)
       flat={true}
+      link="/feed"
       secondary={false}
       style={
         Object {
@@ -20,6 +21,7 @@ exports[`The TopNavigation instance When called with default properties should r
     </Jss(Button)>
     <Jss(Button)
       flat={true}
+      link="/vote"
       secondary={false}
       style={
         Object {
@@ -31,6 +33,7 @@ exports[`The TopNavigation instance When called with default properties should r
     </Jss(Button)>
     <Jss(Button)
       flat={true}
+      link="/contact"
       secondary={false}
       style={
         Object {
