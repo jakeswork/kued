@@ -8,14 +8,15 @@ export default theme => ({
     alignItems: 'center',
     background: theme.colorSecondary,
     backgroundImage: `url(${backgroundImage})`,
-    backgroundSize: '130% 130%',
+    backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center center',
+    backgroundPosition: 'top',
   },
   center: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    textAlign: 'center',
   },
   buttonsContainer: {
     width: 300,

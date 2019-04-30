@@ -13,9 +13,9 @@ const Home = ({ classes }) => (
         Elevate your arena experience.
       </Text>
       <Text h4 style={{ color: '#b1a0a0', marginTop: 16, textAlign: 'center' }}>
-        With the most up-to-date live meta data, we can help you
+        With the most up-to-date live meta data, we allow you to
         <br />
-        predict opponents and give your teams the best opportunities.
+        predict opponents and open up the best opportunities.
       </Text>
       <div className={classes.buttonsContainer}>
         <Button link="/feed">Get Started</Button>
