@@ -19,8 +19,8 @@ export default theme => ({
     textAlign: 'center',
   },
   buttonsContainer: {
-    width: 300,
-    padding: '2em',
+    width: 332,
+    padding: '2em 0',
     flexWrap: 'wrap',
     display: 'flex',
     justifyContent: 'space-between',

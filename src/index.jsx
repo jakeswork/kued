@@ -7,6 +7,7 @@ import 'typeface-karla';
 import './reset.css';
 import './base.css';
 import Home from './routes/Home';
+import Contact from './routes/Contact';
 
 const theme = {
   fontFamily: 'Karla,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol',
@@ -24,6 +25,7 @@ const App = () => (
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/contact" component={Contact} />
       </Switch>
     </BrowserRouter>
   </ThemeProvider>

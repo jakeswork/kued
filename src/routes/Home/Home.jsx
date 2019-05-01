@@ -6,9 +6,9 @@ import Button from '../../components/Button';
 import TopNavigation from './components/TopNavigation';
 
 const Home = ({ classes }) => (
-  <div className={classes.root}>
+  <header className={classes.root}>
     <TopNavigation />
-    <div className={classes.center}>
+    <main className={classes.center}>
       <Text h1 style={{ color: 'white' }}>
         Elevate your arena experience.
       </Text>
@@ -19,10 +19,10 @@ const Home = ({ classes }) => (
       </Text>
       <div className={classes.buttonsContainer}>
         <Button link="/feed">Get Started</Button>
-        <Button secondary style={{ color: 'white' }} link="/contact">Roadmap</Button>
+        <Button secondary style={{ color: 'white' }} link="/contact">Learn More</Button>
       </div>
-    </div>
-  </div>
+    </main>
+  </header>
 );
 
 Home.propTypes = propTypes;

@@ -7,6 +7,7 @@ import MenuItems from './components/MenuItems';
 import Text from '../../../../components/Text';
 import logo from '../../../../assets/kued-logotype.png';
 import menuLogo from '../../../../assets/logo.png';
+import Viewport from '../../../../utils/Viewport';
 
 class TopNavigation extends Component {
   static propTypes = propTypes;
@@ -26,7 +27,7 @@ class TopNavigation extends Component {
   }
 
   updateViewportState = () => {
-    this.setState({ isMobileViewport: window.innerWidth < 415 });
+    this.setState({ isMobileViewport: Viewport.mobile() });
   }
 
   render() {
@@ -60,9 +61,9 @@ class TopNavigation extends Component {
                     data-test-id="closeMenuButton"
                     onClick={() => this.setState({ isOpen: false })}
                   />
-                  <div className={classes.responsiveMenuItems}>
+                  <nav className={classes.responsiveMenuItems}>
                     <MenuItems />
-                  </div>
+                  </nav>
                   <div className={classes.menuFooterWrapper}>
                     <img src={menuLogo} alt="Kued Logo" className={classes.menuLogo} />
                     <Text bold style={{ color: 'white' }}>Kued for private servers.</Text>
@@ -71,9 +72,9 @@ class TopNavigation extends Component {
                 </Menu>
               </Fragment>
             ) : (
-              <div className={classes.menuItems}>
+              <nav className={classes.menuItems}>
                 <MenuItems />
-              </div>
+              </nav>
             )
         }
       </Fragment>
