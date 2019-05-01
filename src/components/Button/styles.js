@@ -14,6 +14,16 @@ const defaultStyles = theme => ({
 });
 
 export default theme => ({
+  [theme.media.mobile]: {
+    button: {
+      width: '100%',
+      margin: '16px 0',
+    },
+    secondary: {
+      width: '100%',
+      margin: '16px 0',
+    },
+  },
   button: {
     ...defaultStyles(theme),
     backgroundColor: theme.colorPrimary,

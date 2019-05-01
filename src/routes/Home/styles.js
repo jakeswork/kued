@@ -10,7 +10,7 @@ export default theme => ({
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'top',
+    backgroundPosition: 'top left',
   },
   center: {
     display: 'flex',
@@ -21,6 +21,7 @@ export default theme => ({
   buttonsContainer: {
     width: 300,
     padding: '2em',
+    flexWrap: 'wrap',
     display: 'flex',
     justifyContent: 'space-between',
   },

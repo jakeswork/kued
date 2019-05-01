@@ -8,6 +8,7 @@
     "react": "^16.8.6",
     "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.6.1",
     "react-jss": "^8.6.1",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
@@ -22,8 +23,9 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.jsx",
-      "!src/**/__generated__/**"
+      "**/*.jsx",
+      "!**/node_modules/**",
+      "!src/index.jsx"
     ],
     "coverageThreshold": {
       "global": {
@@ -34,7 +36,7 @@
       }
     },
     "coverageReporters": [
-      "text"
+      "html"
     ],
     "snapshotSerializers": [
       "<rootDir>/node_modules/enzyme-to-json/serializer"

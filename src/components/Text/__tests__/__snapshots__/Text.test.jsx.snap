@@ -2,7 +2,11 @@
 
 exports[`The Text instance When rendered with default props should render a <p /> tag 1`] = `
 <p
-  style={Object {}}
+  style={
+    Object {
+      "fontWeight": "bold",
+    }
+  }
 />
 `;
 

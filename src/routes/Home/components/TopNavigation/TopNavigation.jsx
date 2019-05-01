@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
-import { stack as Menu } from 'react-burger-menu';
+import React, { Component, Fragment } from 'react';
+import { slide as Menu } from 'react-burger-menu';
+import { FiMenu, FiX } from 'react-icons/fi';
 
 import propTypes from './types';
-import Button from '../../../../components/Button';
+import MenuItems from './components/MenuItems';
+import Text from '../../../../components/Text';
 import logo from '../../../../assets/kued-logotype.png';
+import menuLogo from '../../../../assets/logo.png';
 
 class TopNavigation extends Component {
   static propTypes = propTypes;
 
   state = {
     isMobileViewport: false,
+    isOpen: false,
   }
 
   componentDidMount() {
@@ -22,45 +26,57 @@ class TopNavigation extends Component {
   }
 
   updateViewportState = () => {
-    this.setState({ isMobileViewport: window.innerWidth < 376 });
+    this.setState({ isMobileViewport: window.innerWidth < 415 });
   }
 
   render() {
     const { classes } = this.props;
-    const { isMobileViewport } = this.state;
+    const { isMobileViewport, isOpen } = this.state;
 
     return (
-      <div className={classes.root}>
-        <img src={logo} alt="Kued Logo" className={classes.img} />
+      <Fragment>
+        <img src={logo} alt="Kued Logotype" className={classes.img} />
         {
           isMobileViewport
             ? (
-              <Menu right>
-                <Button flat style={{ color: 'white' }} link="/feed">
-                  Whos Playing
-                </Button>
-                <Button flat style={{ color: 'white' }} link="/vote">
-                  Compatibility
-                </Button>
-                <Button flat style={{ color: 'white' }} link="/contact">
-                  Contact
-                </Button>
-              </Menu>
+              <Fragment>
+                <FiMenu
+                  className={classes.menuIcon}
+                  data-test-id="openMenuButton"
+                  onClick={() => this.setState({ isOpen: !isOpen })}
+                />
+                <Menu
+                  right
+                  width="100%"
+                  isOpen={isOpen}
+                  className={classes.burgerMenu}
+                  customBurgerIcon={false}
+                  customCrossIcon={false}
+                  noOverlay
+                  data-test-id="slideOutMenu"
+                >
+                  <FiX
+                    className={classes.menuIcon}
+                    data-test-id="closeMenuButton"
+                    onClick={() => this.setState({ isOpen: false })}
+                  />
+                  <div className={classes.responsiveMenuItems}>
+                    <MenuItems />
+                  </div>
+                  <div className={classes.menuFooterWrapper}>
+                    <img src={menuLogo} alt="Kued Logo" className={classes.menuLogo} />
+                    <Text bold style={{ color: 'white' }}>Kued for private servers.</Text>
+                    <Text caption bold style={{ color: 'white' }}>v1.0.0</Text>
+                  </div>
+                </Menu>
+              </Fragment>
             ) : (
               <div className={classes.menuItems}>
-                <Button flat style={{ color: 'white' }} link="/feed">
-                  Whos Playing
-                </Button>
-                <Button flat style={{ color: 'white' }} link="/vote">
-                  Compatibility
-                </Button>
-                <Button flat style={{ color: 'white' }} link="/contact">
-                  Contact
-                </Button>
+                <MenuItems />
               </div>
             )
         }
-      </div>
+      </Fragment>
     );
   }
 }
