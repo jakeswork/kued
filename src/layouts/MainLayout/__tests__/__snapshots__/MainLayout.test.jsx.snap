@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The MainLayout instance when called with default properties should render without throwing any errors 1`] = `
+<Fragment>
+  <Jss(SideMenu) />
+  <main />
+</Fragment>
+`;

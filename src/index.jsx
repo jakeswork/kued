@@ -16,7 +16,7 @@ const theme = {
   textPrimary: '#2b090a',
   textSecondary: '#b1a0a0',
   media: {
-    mobile: '@media (max-width: 414px)',
+    mobile: '@media all and (max-width: 414px)',
   },
 };
 

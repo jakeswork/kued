@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The Home instance when called with default props should render without throwing errors 1`] = `
-<div>
+<header>
   <Jss(TopNavigation) />
-  <div>
+  <main>
     <Jss(Text)
       bold={false}
       caption={false}
@@ -58,9 +58,9 @@ exports[`The Home instance when called with default props should render without 
           }
         }
       >
-        Roadmap
+        Learn More
       </Jss(Button)>
     </div>
-  </div>
-</div>
+  </main>
+</header>
 `;

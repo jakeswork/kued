@@ -4,6 +4,9 @@ import { FiX, FiMenu } from 'react-icons/fi';
 
 import { propTypes, defaultProps } from './types';
 import Viewport from '../../../../utils/Viewport';
+import logo from '../../../../assets/kued-logotype.png';
+import Text from '../../../../components/Text';
+import MenuItems from './components/MenuItems';
 
 class SideMenu extends Component {
   static propTypes = propTypes;
@@ -25,7 +28,10 @@ class SideMenu extends Component {
   }
 
   updateViewportState = () => {
-    this.setState({ isMobileViewport: Viewport.mobile() });
+    this.setState({
+      isMobileViewport: Viewport.mobile(),
+      isOpen: !Viewport.mobile(),
+    });
   }
 
   render() {
@@ -49,17 +55,23 @@ class SideMenu extends Component {
           customCrossIcon={false}
           noOverlay
           data-test-id="sideMenu"
+          itemListClassName={classes.menuList}
         >
           {isMobileViewport && (
             <FiX
               className={classes.menuIcon}
               data-test-id="closeMenuButton"
               onClick={() => this.setState({ isOpen: false })}
+              style={{ color: 'white' }}
             />
           )}
-          <nav className={classes.responsiveMenuItems}>
-            <div>Menu Item</div>
-          </nav>
+          <img src={logo} alt="Kued Logo" className={classes.logo} />
+          <div className={classes.menuItems}>
+            <MenuItems />
+          </div>
+          <div className={classes.sideMenuFooter}>
+            <Text caption style={{ color: 'white' }}>v1.0.0</Text>
+          </div>
         </Menu>
       </Fragment>
     );

@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The SideMenu instance When called with default properties should render without throwing errors 1`] = `
+<Fragment>
+  <Menu
+    bodyClassName=""
+    burgerBarClassName=""
+    burgerButtonClassName=""
+    className=""
+    crossButtonClassName=""
+    crossClassName=""
+    customBurgerIcon={false}
+    customCrossIcon={false}
+    data-test-id="sideMenu"
+    disableAutoFocus={false}
+    disableCloseOnEsc={false}
+    htmlClassName=""
+    id=""
+    isOpen={true}
+    itemClassName=""
+    itemListClassName=""
+    left={true}
+    menuClassName=""
+    morphShapeClassName=""
+    noOverlay={true}
+    onStateChange={[Function]}
+    outerContainerId=""
+    overlayClassName=""
+    pageWrapId=""
+    styles={Object {}}
+    width={300}
+  >
+    <img
+      alt="Kued Logo"
+      src="kued-logotype.png"
+    />
+    <div>
+      <_default />
+    </div>
+    <div>
+      <Jss(Text)
+        bold={false}
+        caption={true}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={false}
+        h5={false}
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        v1.0.0
+      </Jss(Text)>
+    </div>
+  </Menu>
+</Fragment>
+`;

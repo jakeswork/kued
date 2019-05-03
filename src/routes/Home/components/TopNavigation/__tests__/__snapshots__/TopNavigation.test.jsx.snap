@@ -6,8 +6,8 @@ exports[`The TopNavigation instance When called with default properties should r
     alt="Kued Logotype"
     src="kued-logotype.png"
   />
-  <div>
+  <nav>
     <_default />
-  </div>
+  </nav>
 </Fragment>
 `;
