@@ -7,7 +7,9 @@ const MainLayout = ({ classes, children }) => (
   <Fragment>
     <SideMenu />
     <main className={classes.main}>
-      { children }
+      <div className={classes.root}>
+        { children }
+      </div>
     </main>
   </Fragment>
 );

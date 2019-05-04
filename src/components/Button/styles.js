@@ -10,6 +10,7 @@ const defaultStyles = theme => ({
   fontSize: 16,
   fontWeight: 600,
   minWidth: 88,
+  margin: '16px 0',
   fontFamily: theme.fontFamily,
 });
 
@@ -17,11 +18,9 @@ export default theme => ({
   [theme.media.mobile]: {
     button: {
       width: '100%',
-      margin: '16px 0',
     },
     secondary: {
       width: '100%',
-      margin: '16px 0',
     },
   },
   button: {

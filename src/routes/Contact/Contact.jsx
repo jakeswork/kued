@@ -6,10 +6,10 @@ import Text from '../../components/Text';
 import Card from '../../components/Card';
 import Emoji from '../../components/Emoji';
 import ResponsiveModal from './components/ResponsiveModal';
+import Button from '../../components/Button';
 
 export const cardStyles = {
   cursor: 'pointer',
-  width: '25%',
   minWidth: 240,
 };
 
@@ -63,12 +63,35 @@ class Contact extends Component {
         </div>
         <ResponsiveModal in={showType === 'support'} onClose={this.close}>
           <Text h3>Supporting Kued</Text>
+          <Text>
+            Kued is an independent project with ongoing development
+            made possible thanks to the support of awesome backers.
+            If you&apos;d like to help us out in the best way possible,
+            please consider joining them!
+          </Text>
+          <Button>Donate</Button>
         </ResponsiveModal>
         <ResponsiveModal in={showType === 'bug'} onClose={this.close}>
           <Text h3>Reporting Issues</Text>
+          <Text>
+            We want to make Kued the best it can be. To do so, we need your help.
+            There&apos;s only so much testing we can do. As such, we call on the users of Kued
+            to report any problems they have so that we can tackle them head on
+            and give all of our users the best experience.
+          </Text>
+          <Button>Report Problem</Button>
         </ResponsiveModal>
         <ResponsiveModal in={showType === 'vote'} onClose={this.close}>
           <Text h3>Server Requests</Text>
+          <Text>
+            Is Kued not yet supported by your server but you would like it to be?
+            Let your voice be heard! Head over to the vote
+            page to let us know where we&apos;re wanted!
+          </Text>
+          <Text bold caption>
+            Once a server reaches 50 vote points it will be considered for development.
+          </Text>
+          <Button link="/vote">Vote</Button>
         </ResponsiveModal>
       </MainLayout>
     );
