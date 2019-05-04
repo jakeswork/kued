@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Contact instance When called with default properties should render without throwing any errors 1`] = `
+<Jss(MainLayout)>
+  <Jss(Text)
+    bold={false}
+    caption={false}
+    h1={true}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={false}
+    style={Object {}}
+  >
+    How can we help?
+  </Jss(Text)>
+  <Jss(Text)
+    bold={false}
+    caption={true}
+    h1={false}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={false}
+    style={Object {}}
+  >
+    Click on a card to learn more.
+  </Jss(Text)>
+  <div>
+    <Jss(Card)
+      data-test-id="supportCard"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+          "minWidth": 240,
+          "width": "25%",
+        }
+      }
+    >
+      <Jss(Text)
+        bold={false}
+        caption={false}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={true}
+        h5={false}
+        style={Object {}}
+      >
+        Help us help you 
+        <Jss(Emoji)
+          emoji={null}
+          icon="🤝"
+          label="handshake"
+        />
+      </Jss(Text)>
+      <Jss(Text)
+        bold={true}
+        caption={true}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={false}
+        h5={false}
+        style={Object {}}
+      >
+        Want to help out by supporting the project?
+      </Jss(Text)>
+    </Jss(Card)>
+    <Jss(Card)
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+          "minWidth": 240,
+          "width": "25%",
+        }
+      }
+    >
+      <Jss(Text)
+        bold={false}
+        caption={false}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={true}
+        h5={false}
+        style={Object {}}
+      >
+        Something not right? 
+        <Jss(Emoji)
+          emoji={null}
+          icon="🛠"
+          label="hammer-and-wrench"
+        />
+      </Jss(Text)>
+      <Jss(Text)
+        bold={true}
+        caption={true}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={false}
+        h5={false}
+        style={Object {}}
+      >
+        Let us know if you're having any problems.
+      </Jss(Text)>
+    </Jss(Card)>
+    <Jss(Card)
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+          "minWidth": 240,
+          "width": "25%",
+        }
+      }
+    >
+      <Jss(Text)
+        bold={false}
+        caption={false}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={true}
+        h5={false}
+        style={Object {}}
+      >
+        Missing out? 
+        <Jss(Emoji)
+          emoji={null}
+          icon="😭"
+          label="loudly-crying-face"
+        />
+      </Jss(Text)>
+      <Jss(Text)
+        bold={true}
+        caption={true}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={false}
+        h5={false}
+        style={Object {}}
+      >
+        Vote for us to come to your server.
+      </Jss(Text)>
+    </Jss(Card)>
+  </div>
+  <Jss(ResponsiveModal)
+    in={false}
+    onClose={[Function]}
+  >
+    <Jss(Text)
+      bold={false}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={true}
+      h4={false}
+      h5={false}
+      style={Object {}}
+    >
+      Supporting Kued
+    </Jss(Text)>
+  </Jss(ResponsiveModal)>
+  <Jss(ResponsiveModal)
+    in={false}
+    onClose={[Function]}
+  >
+    <Jss(Text)
+      bold={false}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={true}
+      h4={false}
+      h5={false}
+      style={Object {}}
+    >
+      Reporting Issues
+    </Jss(Text)>
+  </Jss(ResponsiveModal)>
+  <Jss(ResponsiveModal)
+    in={false}
+    onClose={[Function]}
+  >
+    <Jss(Text)
+      bold={false}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={true}
+      h4={false}
+      h5={false}
+      style={Object {}}
+    >
+      Server Requests
+    </Jss(Text)>
+  </Jss(ResponsiveModal)>
+</Jss(MainLayout)>
+`;

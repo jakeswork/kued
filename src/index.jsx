@@ -15,6 +15,7 @@ const theme = {
   colorSecondary: '#17233a',
   textPrimary: '#2b090a',
   textSecondary: '#b1a0a0',
+  textGrey: '#ccc',
   media: {
     mobile: '@media all and (max-width: 414px)',
   },

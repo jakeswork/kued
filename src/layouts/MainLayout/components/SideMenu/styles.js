@@ -6,6 +6,7 @@ export default theme => ({
     left: 16,
     cursor: 'pointer',
     color: theme.colorSecondary,
+    zIndex: 2,
   },
   burgerMenu: {
     borderRight: `1px solid ${theme.textSecondary}`,

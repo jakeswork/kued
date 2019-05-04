@@ -12,6 +12,7 @@
     "react-jss": "^8.6.1",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
+    "react-transition-group": "^4.0.0",
     "typeface-karla": "^0.0.72"
   },
   "scripts": {

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Emoji instance When called with default props Should render without throwing an error 1`] = `
+<span
+  aria-label="test"
+  emoji={null}
+  role="img"
+/>
+`;

@@ -9,6 +9,7 @@ const Button = ({
   flat,
   children,
   link,
+  theme,
   ...props
 }) => {
   let className = classes.button;

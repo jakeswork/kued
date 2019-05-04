@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The ResponsiveModal instance When called with default props should render without throwing any errors 1`] = `
+<CSSTransition
+  classNames={
+    Object {
+      "enter": undefined,
+      "enterActive": undefined,
+      "exit": undefined,
+      "exitActive": undefined,
+    }
+  }
+  timeout={300}
+  unmountOnExit={true}
+>
+  <div>
+    <Jss(Card)
+      style={
+        Object {
+          "width": "calc(100% - 80px)",
+        }
+      }
+    >
+      <FiX
+        data-test-id="closeModalButton"
+        onClick={[Function]}
+      />
+    </Jss(Card)>
+  </div>
+</CSSTransition>
+`;

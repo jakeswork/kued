@@ -1,7 +1,8 @@
 export default theme => ({
   main: {
     marginLeft: 300,
-    padding: '32px 16px',
+    padding: 32,
+    textAlign: 'center',
   },
   [theme.media.mobile]: {
     main: {
