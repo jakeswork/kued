@@ -5,3 +5,9 @@ exports[`The Button instance when called with default properties should render w
   type="button"
 />
 `;
+
+exports[`The Button instance when the secondary prop is passed should render a secondary button 1`] = `
+<button
+  type="button"
+/>
+`;

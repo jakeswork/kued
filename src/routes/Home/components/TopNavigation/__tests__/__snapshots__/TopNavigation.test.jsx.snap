@@ -1,45 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The TopNavigation instance When called with default properties should render without throwing errors 1`] = `
-<div>
+<Fragment>
   <img
-    alt="Kued Logo"
+    alt="Kued Logotype"
     src="kued-logotype.png"
   />
-  <div>
-    <Jss(Button)
-      flat={true}
-      secondary={false}
-      style={
-        Object {
-          "color": "white",
-        }
-      }
-    >
-      Whos Playing
-    </Jss(Button)>
-    <Jss(Button)
-      flat={true}
-      secondary={false}
-      style={
-        Object {
-          "color": "white",
-        }
-      }
-    >
-      Compatibility
-    </Jss(Button)>
-    <Jss(Button)
-      flat={true}
-      secondary={false}
-      style={
-        Object {
-          "color": "white",
-        }
-      }
-    >
-      Contact
-    </Jss(Button)>
-  </div>
-</div>
+  <nav>
+    <_default />
+  </nav>
+</Fragment>
 `;

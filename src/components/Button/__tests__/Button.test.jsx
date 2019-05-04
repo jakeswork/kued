@@ -45,4 +45,30 @@ describe('The Button instance', () => {
       expect(button.props().style).toEqual(newProps.style);
     });
   });
+
+  describe('when the secondary prop is passed', () => {
+    it('should render a secondary button', () => {
+      const newProps = {
+        ...defaultProps,
+        secondary: true,
+      };
+      const wrapper = shallow(<Button {...newProps} />);
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('when the link prop is passed', () => {
+    it('should render a Link component', () => {
+      const newProps = {
+        ...defaultProps,
+        link: '/test',
+        flat: true,
+      };
+      const wrapper = shallow(<Button {...newProps} />);
+      const link = wrapper.find('Link');
+
+      expect(link.exists()).toBe(true);
+    });
+  });
 });

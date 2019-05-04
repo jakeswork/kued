@@ -10,7 +10,7 @@ const defaultProps = {
 describe('The Text instance', () => {
   describe('When rendered with default props', () => {
     it('should render a <p /> tag', () => {
-      const wrapper = shallow(<Text {...defaultProps} />);
+      const wrapper = shallow(<Text bold {...defaultProps} />);
       const p = wrapper.find('p');
 
       expect(p.exists()).toBe(true);

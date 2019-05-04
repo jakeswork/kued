@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The MenuItems instance when rendered should return the list of buttons 1`] = `
+<Fragment>
+  <Jss(Button)
+    flat={true}
+    link="/feed"
+    secondary={false}
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    Warmane
+  </Jss(Button)>
+  <Jss(Button)
+    flat={true}
+    link="/vote"
+    secondary={false}
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    Other Servers
+  </Jss(Button)>
+  <Jss(Button)
+    flat={true}
+    link="/contact"
+    secondary={false}
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    Contact
+  </Jss(Button)>
+</Fragment>
+`;

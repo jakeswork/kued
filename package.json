@@ -6,23 +6,26 @@
     "enzyme-to-json": "^3.3.5",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.6.1",
     "react-jss": "^8.6.1",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
-    "typeface-karla": "^0.0.72",
-    "typeface-open-sans": "^0.0.54"
+    "react-transition-group": "^4.0.0",
+    "typeface-karla": "^0.0.72"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage",
     "eject": "react-scripts eject"
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.test.jsx",
-      "!<rootDir>/node_modules/"
+      "**/*.jsx",
+      "!**/node_modules/**",
+      "!src/index.jsx"
     ],
     "coverageThreshold": {
       "global": {
@@ -33,7 +36,7 @@
       }
     },
     "coverageReporters": [
-      "text"
+      "html"
     ],
     "snapshotSerializers": [
       "<rootDir>/node_modules/enzyme-to-json/serializer"

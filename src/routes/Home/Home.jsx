@@ -6,23 +6,23 @@ import Button from '../../components/Button';
 import TopNavigation from './components/TopNavigation';
 
 const Home = ({ classes }) => (
-  <div className={classes.root}>
+  <header className={classes.root}>
     <TopNavigation />
-    <div className={classes.center}>
+    <main className={classes.center}>
       <Text h1 style={{ color: 'white' }}>
         Elevate your arena experience.
       </Text>
-      <Text h4 style={{ color: '#b1a0a0', marginTop: 16, textAlign: 'center' }}>
-        With the most up-to-date live meta data, we can help you
+      <Text h4 style={{ color: '#b1a0a0', margin: 16, textAlign: 'center' }}>
+        With the most up-to-date live meta data, we allow you to
         <br />
-        predict opponents and give your teams the best opportunities.
+        predict opponents and open up the best opportunities.
       </Text>
       <div className={classes.buttonsContainer}>
-        <Button>Get Started</Button>
-        <Button secondary style={{ color: 'white' }}>Roadmap</Button>
+        <Button link="/feed">Get Started</Button>
+        <Button secondary style={{ color: 'white' }} link="/contact">Learn More</Button>
       </div>
-    </div>
-  </div>
+    </main>
+  </header>
 );
 
 Home.propTypes = propTypes;

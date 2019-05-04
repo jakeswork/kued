@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The Home instance when called with default props should render without throwing errors 1`] = `
-<div>
+<header>
   <Jss(TopNavigation) />
-  <div>
+  <main>
     <Jss(Text)
       bold={false}
       caption={false}
@@ -31,24 +31,26 @@ exports[`The Home instance when called with default props should render without 
       style={
         Object {
           "color": "#b1a0a0",
-          "marginTop": 16,
+          "margin": 16,
           "textAlign": "center",
         }
       }
     >
-      With the most up-to-date live meta data, we can help you
+      With the most up-to-date live meta data, we allow you to
       <br />
-      predict opponents and give your teams the best opportunities.
+      predict opponents and open up the best opportunities.
     </Jss(Text)>
     <div>
       <Jss(Button)
         flat={false}
+        link="/feed"
         secondary={false}
       >
         Get Started
       </Jss(Button)>
       <Jss(Button)
         flat={false}
+        link="/contact"
         secondary={true}
         style={
           Object {
@@ -56,9 +58,9 @@ exports[`The Home instance when called with default props should render without 
           }
         }
       >
-        Roadmap
+        Learn More
       </Jss(Button)>
     </div>
-  </div>
-</div>
+  </main>
+</header>
 `;

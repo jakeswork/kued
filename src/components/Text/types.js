@@ -1,4 +1,4 @@
-import { bool, string, shape } from 'prop-types';
+import { bool, node, shape } from 'prop-types';
 
 export const propTypes = {
   bold: bool,
@@ -8,7 +8,7 @@ export const propTypes = {
   h4: bool,
   h5: bool,
   caption: bool,
-  children: string,
+  children: node,
   classes: shape({}).isRequired,
   style: shape({}),
 };

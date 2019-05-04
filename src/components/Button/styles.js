@@ -1,5 +1,6 @@
 const defaultStyles = theme => ({
   display: 'inline-block',
+  textDecoration: 'none',
   textAlign: 'center',
   position: 'relative',
   padding: '.84375rem 1.5rem .65625rem',
@@ -13,6 +14,16 @@ const defaultStyles = theme => ({
 });
 
 export default theme => ({
+  [theme.media.mobile]: {
+    button: {
+      width: '100%',
+      margin: '16px 0',
+    },
+    secondary: {
+      width: '100%',
+      margin: '16px 0',
+    },
+  },
   button: {
     ...defaultStyles(theme),
     backgroundColor: theme.colorPrimary,
