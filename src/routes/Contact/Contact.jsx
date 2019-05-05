@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FiAlertTriangle, FiStar, FiHeart } from 'react-icons/fi';
+import { FiAlertTriangle, FiHeart, FiThumbsUp } from 'react-icons/fi';
 
 import propTypes from './types';
 import MainLayout from '../../layouts/MainLayout';
@@ -70,7 +70,14 @@ class Contact extends Component {
             If you&apos;d like to help us out in the best way possible,
             please consider joining them!
           </Text>
-          <Button icon={<FiHeart />}>Donate</Button>
+          <Button
+            icon={<FiHeart />}
+            success
+            analyticsLabel="donationLink"
+            link="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JG5ENWX7ADSKL&source=url"
+          >
+            Donate via PayPal
+          </Button>
         </ResponsiveModal>
         <ResponsiveModal in={showType === 'bug'} onClose={this.close}>
           <Text h3>Reporting Issues</Text>
@@ -80,8 +87,13 @@ class Contact extends Component {
             they have encountered, so that we can tackle them head on
             and give all of our users the best experience.
           </Text>
-          <Button link="https://forms.gle/s4CrhrzT5buhp1PR6" icon={<FiAlertTriangle />}>
-            Report Problem
+          <Button
+            danger
+            link="https://forms.gle/gu9fpS2RZytgzSbj9"
+            icon={<FiAlertTriangle />}
+            analyticsLabel="bugReportLink"
+          >
+            Report a bug
           </Button>
         </ResponsiveModal>
         <ResponsiveModal in={showType === 'vote'} onClose={this.close}>
@@ -94,7 +106,7 @@ class Contact extends Component {
           <Text bold caption>
             Once a server reaches 50 vote points it will be considered for development.
           </Text>
-          <Button link="/vote" icon={<FiStar />}>Vote</Button>
+          <Button link="/vote" icon={<FiThumbsUp />}>Vote for your server</Button>
         </ResponsiveModal>
       </MainLayout>
     );

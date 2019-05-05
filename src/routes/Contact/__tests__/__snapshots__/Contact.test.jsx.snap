@@ -175,12 +175,15 @@ exports[`The Contact instance When called with default properties should render 
       Kued is an independent project with ongoing development made possible thanks to the support of awesome backers. If you'd like to help us out in the best way possible, please consider joining them!
     </Jss(Text)>
     <Jss(Button)
+      analyticsLabel="donationLink"
+      danger={false}
       flat={false}
       icon={<FiHeart />}
-      link={null}
+      link="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JG5ENWX7ADSKL&source=url"
       secondary={false}
+      success={true}
     >
-      Donate
+      Donate via PayPal
     </Jss(Button)>
   </Jss(ResponsiveModal)>
   <Jss(ResponsiveModal)
@@ -212,12 +215,15 @@ exports[`The Contact instance When called with default properties should render 
       We want to make Kued the best it can be. To do so, we need your help. We call on all users of Kued to report any problems they have encountered, so that we can tackle them head on and give all of our users the best experience.
     </Jss(Text)>
     <Jss(Button)
+      analyticsLabel="bugReportLink"
+      danger={true}
       flat={false}
       icon={<FiAlertTriangle />}
-      link="https://forms.gle/s4CrhrzT5buhp1PR6"
+      link="https://forms.gle/gu9fpS2RZytgzSbj9"
       secondary={false}
+      success={false}
     >
-      Report Problem
+      Report a bug
     </Jss(Button)>
   </Jss(ResponsiveModal)>
   <Jss(ResponsiveModal)
@@ -261,12 +267,15 @@ exports[`The Contact instance When called with default properties should render 
       Once a server reaches 50 vote points it will be considered for development.
     </Jss(Text)>
     <Jss(Button)
+      analyticsLabel={null}
+      danger={false}
       flat={false}
-      icon={<FiStar />}
+      icon={<FiThumbsUp />}
       link="/vote"
       secondary={false}
+      success={false}
     >
-      Vote
+      Vote for your server
     </Jss(Button)>
   </Jss(ResponsiveModal)>
 </Jss(MainLayout)>

@@ -33,8 +33,14 @@ export default theme => ({
   },
   button: {
     ...defaultStyles,
-    backgroundColor: theme.colorPrimary,
-    border: '1px solid transparent',
+    background: ({ danger, success }) => {
+      if (danger) return theme.colorRed;
+
+      if (success) return theme.colorGreen;
+
+      return `linear-gradient(130deg, ${theme.colorGradientStart}, ${theme.colorGradientEnd}) transparent`;
+    },
+    border: 0,
     color: '#fff',
     textShadow: '0 1px 0 rgba(0,0,0,0.03)',
   },

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { OutboundLink } from 'react-ga';
 import classNames from 'classnames';
 
 import { propTypes, defaultProps } from './types';
@@ -12,6 +13,9 @@ const Button = ({
   link,
   theme,
   icon,
+  analyticsLabel,
+  success,
+  danger,
   ...props
 }) => {
   let className = classes.button;
@@ -23,17 +27,18 @@ const Button = ({
   if (link) {
     if (/^https?:\/\//.test(link)) {
       return (
-        <a
+        <OutboundLink
           {...props}
           role="button"
           className={classNames(className, classes.link)}
-          href={link}
-          target="blank"
+          eventLabel={analyticsLabel}
+          to={link}
+          target="_blank"
           rel="noopener noreferrer"
         >
           { children }
           { icon && React.cloneElement(icon, { className: classes.buttonIcon }) }
-        </a>
+        </OutboundLink>
       );
     }
 

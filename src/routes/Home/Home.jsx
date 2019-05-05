@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiArrowRight } from 'react-icons/fi';
 
 import propTypes from './types';
 import Text from '../../components/Text';
@@ -18,7 +19,7 @@ const Home = ({ classes }) => (
         predict opponents and open up the best opportunities.
       </Text>
       <div className={classes.buttonsContainer}>
-        <Button link="/feed">Get Started</Button>
+        <Button link="/feed" icon={<FiArrowRight />}>Get Started</Button>
         <Button secondary style={{ color: 'white' }} link="/contact">Learn More</Button>
       </div>
     </main>

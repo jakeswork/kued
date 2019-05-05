@@ -42,14 +42,19 @@ exports[`The Home instance when called with default props should render without 
     </Jss(Text)>
     <div>
       <Jss(Button)
+        analyticsLabel={null}
+        danger={false}
         flat={false}
-        icon={null}
+        icon={<FiArrowRight />}
         link="/feed"
         secondary={false}
+        success={false}
       >
         Get Started
       </Jss(Button)>
       <Jss(Button)
+        analyticsLabel={null}
+        danger={false}
         flat={false}
         icon={null}
         link="/contact"
@@ -59,6 +64,7 @@ exports[`The Home instance when called with default props should render without 
             "color": "white",
           }
         }
+        success={false}
       >
         Learn More
       </Jss(Button)>

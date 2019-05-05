@@ -3,6 +3,8 @@
 exports[`The MenuItems instance when rendered should return the list of buttons 1`] = `
 <Fragment>
   <Jss(Button)
+    analyticsLabel={null}
+    danger={false}
     flat={true}
     icon={null}
     link="/feed"
@@ -12,10 +14,13 @@ exports[`The MenuItems instance when rendered should return the list of buttons 
         "color": "white",
       }
     }
+    success={false}
   >
     Warmane
   </Jss(Button)>
   <Jss(Button)
+    analyticsLabel={null}
+    danger={false}
     flat={true}
     icon={null}
     link="/vote"
@@ -25,10 +30,13 @@ exports[`The MenuItems instance when rendered should return the list of buttons 
         "color": "white",
       }
     }
+    success={false}
   >
     Other Servers
   </Jss(Button)>
   <Jss(Button)
+    analyticsLabel={null}
+    danger={false}
     flat={true}
     icon={null}
     link="/contact"
@@ -38,6 +46,7 @@ exports[`The MenuItems instance when rendered should return the list of buttons 
         "color": "white",
       }
     }
+    success={false}
   >
     Contact
   </Jss(Button)>

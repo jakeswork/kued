@@ -21,6 +21,7 @@ describe('The Button instance', () => {
       const newProps = {
         ...defaultProps,
         onClick: jest.fn(),
+        success: true,
       };
       const wrapper = shallow(<Button {...newProps} />);
       const button = wrapper.find('button');
@@ -35,6 +36,7 @@ describe('The Button instance', () => {
     it('should add a style attribute to the element with the overrides', () => {
       const newProps = {
         ...defaultProps,
+        danger: true,
         style: {
           fontSize: 0,
         },
@@ -74,16 +76,17 @@ describe('The Button instance', () => {
   });
 
   describe('when an external link is passed', () => {
-    it('should render an a tag with an external attribute', () => {
+    it('should render an outboundlink component', () => {
       const newProps = {
         ...defaultProps,
         link: 'https://www.example.com/',
+        analyticsLabel: 'test',
         icon: <div />,
       };
       const wrapper = shallow(<Button {...newProps} />);
-      const a = wrapper.find('a');
+      const outboundLink = wrapper.find('OutboundLink');
 
-      expect(a.props().target).toEqual('blank');
+      expect(outboundLink.exists()).toBe(true);
     });
   });
 
