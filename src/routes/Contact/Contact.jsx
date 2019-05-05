@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FiAlertTriangle, FiStar, FiHeart } from 'react-icons/fi';
 
 import propTypes from './types';
 import MainLayout from '../../layouts/MainLayout';
@@ -69,29 +70,31 @@ class Contact extends Component {
             If you&apos;d like to help us out in the best way possible,
             please consider joining them!
           </Text>
-          <Button>Donate</Button>
+          <Button icon={<FiHeart />}>Donate</Button>
         </ResponsiveModal>
         <ResponsiveModal in={showType === 'bug'} onClose={this.close}>
           <Text h3>Reporting Issues</Text>
           <Text>
             We want to make Kued the best it can be. To do so, we need your help.
-            There&apos;s only so much testing we can do. As such, we call on the users of Kued
-            to report any problems they have so that we can tackle them head on
+            We call on all users of Kued to report any problems
+            they have encountered, so that we can tackle them head on
             and give all of our users the best experience.
           </Text>
-          <Button>Report Problem</Button>
+          <Button link="https://forms.gle/s4CrhrzT5buhp1PR6" icon={<FiAlertTriangle />}>
+            Report Problem
+          </Button>
         </ResponsiveModal>
         <ResponsiveModal in={showType === 'vote'} onClose={this.close}>
           <Text h3>Server Requests</Text>
           <Text>
-            Is Kued not yet supported by your server but you would like it to be?
+            Is your server not yet supported by Kued?
             Let your voice be heard! Head over to the vote
             page to let us know where we&apos;re wanted!
           </Text>
           <Text bold caption>
             Once a server reaches 50 vote points it will be considered for development.
           </Text>
-          <Button link="/vote">Vote</Button>
+          <Button link="/vote" icon={<FiStar />}>Vote</Button>
         </ResponsiveModal>
       </MainLayout>
     );

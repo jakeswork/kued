@@ -1,7 +1,7 @@
 const defaultStyles = theme => ({
   color: theme.textPrimary,
   fontFamily: theme.fontFamily,
-  fontWeight: 600,
+  fontWeight: 700,
 });
 
 export default theme => ({

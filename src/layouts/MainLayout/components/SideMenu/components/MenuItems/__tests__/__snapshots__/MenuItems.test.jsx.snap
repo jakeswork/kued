@@ -4,6 +4,7 @@ exports[`The MenuItems instance when rendered should return the list of buttons 
 <Fragment>
   <Jss(Button)
     flat={true}
+    icon={null}
     link="/feed"
     secondary={false}
     style={
@@ -16,6 +17,7 @@ exports[`The MenuItems instance when rendered should return the list of buttons 
   </Jss(Button)>
   <Jss(Button)
     flat={true}
+    icon={null}
     link="/vote"
     secondary={false}
     style={
@@ -28,6 +30,7 @@ exports[`The MenuItems instance when rendered should return the list of buttons 
   </Jss(Button)>
   <Jss(Button)
     flat={true}
+    icon={null}
     link="/contact"
     secondary={false}
     style={

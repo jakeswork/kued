@@ -64,11 +64,39 @@ describe('The Button instance', () => {
         ...defaultProps,
         link: '/test',
         flat: true,
+        icon: <div />,
       };
       const wrapper = shallow(<Button {...newProps} />);
       const link = wrapper.find('Link');
 
       expect(link.exists()).toBe(true);
+    });
+  });
+
+  describe('when an external link is passed', () => {
+    it('should render an a tag with an external attribute', () => {
+      const newProps = {
+        ...defaultProps,
+        link: 'https://www.example.com/',
+        icon: <div />,
+      };
+      const wrapper = shallow(<Button {...newProps} />);
+      const a = wrapper.find('a');
+
+      expect(a.props().target).toEqual('blank');
+    });
+  });
+
+  describe('when the icon prop is passed', () => {
+    it('should render the icon inside the button', () => {
+      const newProps = {
+        ...defaultProps,
+        icon: <div data-test-id="icon" />,
+      };
+      const wrapper = shallow(<Button {...newProps} />);
+      const icon = wrapper.find({ 'data-test-id': 'icon' });
+
+      expect(icon.exists()).toBe(true);
     });
   });
 });

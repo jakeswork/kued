@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import classNames from 'classnames';
 
 import { propTypes, defaultProps } from './types';
 
@@ -10,6 +11,7 @@ const Button = ({
   children,
   link,
   theme,
+  icon,
   ...props
 }) => {
   let className = classes.button;
@@ -18,9 +20,42 @@ const Button = ({
 
   if (flat) className = classes.flat;
 
-  if (link) return <Link role="button" {...props} className={className} to={link}>{ children }</Link>;
+  if (link) {
+    if (/^https?:\/\//.test(link)) {
+      return (
+        <a
+          {...props}
+          role="button"
+          className={classNames(className, classes.link)}
+          href={link}
+          target="blank"
+          rel="noopener noreferrer"
+        >
+          { children }
+          { icon && React.cloneElement(icon, { className: classes.buttonIcon }) }
+        </a>
+      );
+    }
 
-  return <button type="button" {...props} className={className}>{ children }</button>;
+    return (
+      <Link
+        {...props}
+        role="button"
+        className={classNames(className, classes.link)}
+        to={link}
+      >
+        { children }
+        { icon && React.cloneElement(icon, { className: classes.buttonIcon }) }
+      </Link>
+    );
+  }
+
+  return (
+    <button type="button" {...props} className={className}>
+      { children }
+      { icon && React.cloneElement(icon, { className: classes.buttonIcon }) }
+    </button>
+  );
 };
 
 Button.propTypes = propTypes;

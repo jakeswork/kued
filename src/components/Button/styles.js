@@ -1,18 +1,23 @@
-const defaultStyles = theme => ({
+const defaultStyles = {
   display: 'inline-block',
   textDecoration: 'none',
   textAlign: 'center',
   position: 'relative',
-  padding: '.84375rem 1.5rem .65625rem',
-  borderRadius: '.25rem',
+  border: 0,
   WebkitBoxShadow: '0 1px 5px 0 rgba(0,0,0,0.06)',
   boxShadow: '0 1px 5px 0 rgba(0,0,0,0.06)',
   fontSize: 16,
-  fontWeight: 600,
+  fontWeight: 'bold',
   minWidth: 88,
-  margin: '16px 0',
-  fontFamily: theme.fontFamily,
-});
+  margin: '16px auto',
+  WebkitAppearance: 'none',
+  MozAppearance: 'none',
+  appearance: 'none',
+  borderRadius: 4,
+  cursor: 'pointer',
+  fontFamily: 'inherit',
+  padding: '16px 32px',
+};
 
 export default theme => ({
   [theme.media.mobile]: {
@@ -22,27 +27,35 @@ export default theme => ({
     secondary: {
       width: '100%',
     },
+    link: {
+      width: 'calc(100% - 66px)',
+    },
   },
   button: {
-    ...defaultStyles(theme),
+    ...defaultStyles,
     backgroundColor: theme.colorPrimary,
     border: '1px solid transparent',
     color: '#fff',
     textShadow: '0 1px 0 rgba(0,0,0,0.03)',
   },
   secondary: {
-    ...defaultStyles(theme),
+    ...defaultStyles,
     backgroundColor: 'transparent',
     border: `1px solid ${theme.textSecondary}`,
     color: theme.colorPrimary,
   },
   flat: {
-    ...defaultStyles(theme),
+    ...defaultStyles,
     color: theme.colorPrimary,
     border: 0,
     WebkitBoxShadow: 0,
     boxShadow: 0,
     textTransform: 'uppercase',
     background: 'transparent',
+  },
+  buttonIcon: {
+    fontSize: 20,
+    marginLeft: 8,
+    marginBottom: -4,
   },
 });

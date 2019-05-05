@@ -176,6 +176,7 @@ exports[`The Contact instance When called with default properties should render 
     </Jss(Text)>
     <Jss(Button)
       flat={false}
+      icon={<FiHeart />}
       link={null}
       secondary={false}
     >
@@ -208,11 +209,12 @@ exports[`The Contact instance When called with default properties should render 
       h5={false}
       style={Object {}}
     >
-      We want to make Kued the best it can be. To do so, we need your help. There's only so much testing we can do. As such, we call on the users of Kued to report any problems they have so that we can tackle them head on and give all of our users the best experience.
+      We want to make Kued the best it can be. To do so, we need your help. We call on all users of Kued to report any problems they have encountered, so that we can tackle them head on and give all of our users the best experience.
     </Jss(Text)>
     <Jss(Button)
       flat={false}
-      link={null}
+      icon={<FiAlertTriangle />}
+      link="https://forms.gle/s4CrhrzT5buhp1PR6"
       secondary={false}
     >
       Report Problem
@@ -244,7 +246,7 @@ exports[`The Contact instance When called with default properties should render 
       h5={false}
       style={Object {}}
     >
-      Is Kued not yet supported by your server but you would like it to be? Let your voice be heard! Head over to the vote page to let us know where we're wanted!
+      Is your server not yet supported by Kued? Let your voice be heard! Head over to the vote page to let us know where we're wanted!
     </Jss(Text)>
     <Jss(Text)
       bold={true}
@@ -260,6 +262,7 @@ exports[`The Contact instance When called with default properties should render 
     </Jss(Text)>
     <Jss(Button)
       flat={false}
+      icon={<FiStar />}
       link="/vote"
       secondary={false}
     >

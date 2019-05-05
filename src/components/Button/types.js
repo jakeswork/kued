@@ -11,6 +11,7 @@ export const propTypes = {
   flat: bool,
   link: string,
   classes: shape({}).isRequired,
+  icon: node,
 };
 
 export const defaultProps = {
@@ -18,4 +19,5 @@ export const defaultProps = {
   secondary: false,
   flat: false,
   link: null,
+  icon: null,
 };
