@@ -6,6 +6,8 @@ export default {
   colorGradientEnd: '#d1024f',
   colorRed: '#fb7979',
   colorGreen: '#1fd48e',
+  colorBlue: '#00b4e6',
+  colorAmber: '#fde9b4',
   textPrimary: '#2b090a',
   textSecondary: '#b1a0a0',
   textGrey: '#ccc',

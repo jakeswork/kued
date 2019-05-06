@@ -50,6 +50,7 @@ exports[`The SideMenu instance When called with default properties should render
         h3={false}
         h4={false}
         h5={false}
+        link={null}
         style={
           Object {
             "color": "white",

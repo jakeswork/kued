@@ -12,6 +12,7 @@ exports[`The Home instance when called with default props should render without 
       h3={false}
       h4={false}
       h5={false}
+      link={null}
       style={
         Object {
           "color": "white",
@@ -28,6 +29,7 @@ exports[`The Home instance when called with default props should render without 
       h3={false}
       h4={true}
       h5={false}
+      link={null}
       style={
         Object {
           "color": "#b1a0a0",

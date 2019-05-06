@@ -56,6 +56,15 @@ export default theme => ({
     fontWeight: 400,
     letterSpacing: '-.022em',
   },
+  link: {
+    ...defaultStyles(theme),
+    fontSize: 17,
+    lineHeight: '1.47059',
+    fontWeight: 400,
+    letterSpacing: '-.022em',
+    textDecoration: 'none',
+    color: theme.colorBlue,
+  },
   [theme.media.mobile]: {
     h1: {
       fontSize: 48,

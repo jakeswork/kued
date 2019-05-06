@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Servers instance When called with default props should render without throwing errors 1`] = `
+<Jss(MainLayout)>
+  <Jss(Text)
+    bold={false}
+    caption={false}
+    h1={true}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={false}
+    link={null}
+    style={Object {}}
+  >
+    Servers
+  </Jss(Text)>
+  <Jss(Text)
+    bold={false}
+    caption={false}
+    h1={false}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={true}
+    link={null}
+    style={Object {}}
+  >
+    Kued is bespoke software. Below you can find a list of currently supported servers, as well as the status of other servers.
+  </Jss(Text)>
+  <Jss(Input)
+    onChange={[Function]}
+    placeholder="Enter a server name"
+  />
+  <div>
+    <Jss(Card)
+      key="Warmane"
+      style={
+        Object {
+          "width": 275,
+        }
+      }
+    >
+      <div>
+        <Jss(Text)
+          bold={false}
+          caption={false}
+          h1={false}
+          h2={false}
+          h3={false}
+          h4={true}
+          h5={false}
+          link={null}
+          style={Object {}}
+        >
+          Warmane
+        </Jss(Text)>
+        <Jss(Text)
+          bold={false}
+          caption={false}
+          h1={false}
+          h2={false}
+          h3={false}
+          h4={false}
+          h5={false}
+          link="https://www.warmane.com/"
+          style={Object {}}
+        >
+          https://www.warmane.com/
+        </Jss(Text)>
+      </div>
+      <Jss(Chip)
+        amber={false}
+        green={true}
+        key="TBC"
+        red={false}
+        tooltip="Supported"
+      >
+        TBC
+      </Jss(Chip)>
+      <Jss(Chip)
+        amber={false}
+        green={true}
+        key="WoTLK"
+        red={false}
+        tooltip="Supported"
+      >
+        WoTLK
+      </Jss(Chip)>
+      <Jss(Chip)
+        amber={false}
+        green={false}
+        key="MoP"
+        red={false}
+        tooltip="Development"
+      >
+        MoP
+      </Jss(Chip)>
+    </Jss(Card)>
+    <Jss(Card)
+      key="WoW Circle"
+      style={
+        Object {
+          "width": 275,
+        }
+      }
+    >
+      <div>
+        <Jss(Text)
+          bold={false}
+          caption={false}
+          h1={false}
+          h2={false}
+          h3={false}
+          h4={true}
+          h5={false}
+          link={null}
+          style={Object {}}
+        >
+          WoW Circle
+        </Jss(Text)>
+        <Jss(Text)
+          bold={false}
+          caption={false}
+          h1={false}
+          h2={false}
+          h3={false}
+          h4={false}
+          h5={false}
+          link="https://www.wowcircle.com/en/"
+          style={Object {}}
+        >
+          https://www.wowcircle.com/en/
+        </Jss(Text)>
+      </div>
+      <Jss(Chip)
+        amber={true}
+        green={false}
+        key="WotLK"
+        red={false}
+        tooltip="Considered"
+      >
+        WotLK
+      </Jss(Chip)>
+    </Jss(Card)>
+    <Jss(Card)
+      key="TwinStar"
+      style={
+        Object {
+          "width": 275,
+        }
+      }
+    >
+      <div>
+        <Jss(Text)
+          bold={false}
+          caption={false}
+          h1={false}
+          h2={false}
+          h3={false}
+          h4={true}
+          h5={false}
+          link={null}
+          style={Object {}}
+        >
+          TwinStar
+        </Jss(Text)>
+        <Jss(Text)
+          bold={false}
+          caption={false}
+          h1={false}
+          h2={false}
+          h3={false}
+          h4={false}
+          h5={false}
+          link="https://www.twinstar.cz/"
+          style={Object {}}
+        >
+          https://www.twinstar.cz/
+        </Jss(Text)>
+      </div>
+      <Jss(Chip)
+        amber={true}
+        green={false}
+        key="WoTLK"
+        red={false}
+        tooltip="Considered"
+      >
+        WoTLK
+      </Jss(Chip)>
+      <Jss(Chip)
+        amber={true}
+        green={false}
+        key="Cata"
+        red={false}
+        tooltip="Considered"
+      >
+        Cata
+      </Jss(Chip)>
+    </Jss(Card)>
+  </div>
+</Jss(MainLayout)>
+`;

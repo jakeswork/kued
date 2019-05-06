@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Chip instance When called with default props should render without throwing errors 1`] = `
+<div
+  data-test-id="chip-root"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <Jss(Text)
+    bold={true}
+    caption={true}
+    h1={false}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={false}
+    link={null}
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  />
+</div>
+`;

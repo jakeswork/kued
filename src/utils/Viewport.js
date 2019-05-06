@@ -1,5 +1,3 @@
-class Viewport {
-  static mobile = () => window.innerWidth < 415;
-}
-
-export default Viewport;
+export default {
+  isMobile: () => window.innerWidth < 415,
+};

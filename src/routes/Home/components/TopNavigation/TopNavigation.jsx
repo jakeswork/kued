@@ -27,7 +27,7 @@ class TopNavigation extends Component {
   }
 
   updateViewportState = () => {
-    this.setState({ isMobileViewport: Viewport.mobile() });
+    this.setState({ isMobileViewport: Viewport.isMobile() });
   }
 
   render() {

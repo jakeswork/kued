@@ -10,6 +10,7 @@ exports[`The Support instance When called with default properties should render 
     h3={false}
     h4={false}
     h5={false}
+    link={null}
     style={Object {}}
   >
     How can we help?
@@ -22,6 +23,7 @@ exports[`The Support instance When called with default properties should render 
     h3={false}
     h4={false}
     h5={false}
+    link={null}
     style={Object {}}
   >
     Click on a card to learn more.
@@ -45,6 +47,7 @@ exports[`The Support instance When called with default properties should render 
         h3={false}
         h4={true}
         h5={false}
+        link={null}
         style={Object {}}
       >
         Help us help you 
@@ -62,6 +65,7 @@ exports[`The Support instance When called with default properties should render 
         h3={false}
         h4={false}
         h5={false}
+        link={null}
         style={Object {}}
       >
         Want to help out by supporting the project?
@@ -84,6 +88,7 @@ exports[`The Support instance When called with default properties should render 
         h3={false}
         h4={true}
         h5={false}
+        link={null}
         style={Object {}}
       >
         Something not right? 
@@ -101,6 +106,7 @@ exports[`The Support instance When called with default properties should render 
         h3={false}
         h4={false}
         h5={false}
+        link={null}
         style={Object {}}
       >
         Let us know if you're having any problems.
@@ -123,6 +129,7 @@ exports[`The Support instance When called with default properties should render 
         h3={false}
         h4={true}
         h5={false}
+        link={null}
         style={Object {}}
       >
         Missing out? 
@@ -140,6 +147,7 @@ exports[`The Support instance When called with default properties should render 
         h3={false}
         h4={false}
         h5={false}
+        link={null}
         style={Object {}}
       >
         Vote for us to come to your server.
@@ -158,6 +166,7 @@ exports[`The Support instance When called with default properties should render 
       h3={true}
       h4={false}
       h5={false}
+      link={null}
       style={Object {}}
     >
       Supporting Kued
@@ -170,6 +179,7 @@ exports[`The Support instance When called with default properties should render 
       h3={false}
       h4={false}
       h5={false}
+      link={null}
       style={Object {}}
     >
       Kued is an independent project with ongoing development, made possible thanks to the support of awesome backers. If you'd like to help us out, please consider joining them!
@@ -198,6 +208,7 @@ exports[`The Support instance When called with default properties should render 
       h3={true}
       h4={false}
       h5={false}
+      link={null}
       style={Object {}}
     >
       Reporting Issues
@@ -210,6 +221,7 @@ exports[`The Support instance When called with default properties should render 
       h3={false}
       h4={false}
       h5={false}
+      link={null}
       style={Object {}}
     >
       We want to make Kued the best it can be. To do so, we need your help. We call on all users of Kued to report any problems they have encountered so that we can tackle them head on and give all of our users the best experience.
@@ -238,6 +250,7 @@ exports[`The Support instance When called with default properties should render 
       h3={true}
       h4={false}
       h5={false}
+      link={null}
       style={Object {}}
     >
       Server Requests
@@ -250,6 +263,7 @@ exports[`The Support instance When called with default properties should render 
       h3={false}
       h4={false}
       h5={false}
+      link={null}
       style={Object {}}
     >
       Is your server not yet supported by Kued? Let your voice be heard! Head over and vote for your server to let us know where we're wanted.
@@ -262,6 +276,7 @@ exports[`The Support instance When called with default properties should render 
       h3={false}
       h4={false}
       h5={false}
+      link={null}
       style={Object {}}
     >
       Once a server reaches 50 vote points it will be considered for development.
@@ -287,6 +302,7 @@ exports[`The Support instance When called with default properties should render 
       h3={false}
       h4={false}
       h5={false}
+      link={null}
       style={Object {}}
     >
       You can click below to talk to somebody directly.

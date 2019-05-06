@@ -4,6 +4,8 @@ exports[`The MenuItems instance when rendered should return the list of buttons 
 <ThemeProvider
   theme={
     Object {
+      "colorAmber": "#fde9b4",
+      "colorBlue": "#00b4e6",
       "colorGradientEnd": "#d1024f",
       "colorGradientStart": "#fa7e32",
       "colorGreen": "#1fd48e",
@@ -77,6 +79,8 @@ exports[`The MenuItems instance when rendered should return the list of buttons 
               success={false}
               theme={
                 Object {
+                  "colorAmber": "#fde9b4",
+                  "colorBlue": "#00b4e6",
                   "colorGradientEnd": "#d1024f",
                   "colorGradientStart": "#fa7e32",
                   "colorGreen": "#1fd48e",
@@ -153,6 +157,8 @@ exports[`The MenuItems instance when rendered should return the list of buttons 
               success={false}
               theme={
                 Object {
+                  "colorAmber": "#fde9b4",
+                  "colorBlue": "#00b4e6",
                   "colorGradientEnd": "#d1024f",
                   "colorGradientStart": "#fa7e32",
                   "colorGreen": "#1fd48e",
@@ -229,6 +235,8 @@ exports[`The MenuItems instance when rendered should return the list of buttons 
               success={false}
               theme={
                 Object {
+                  "colorAmber": "#fde9b4",
+                  "colorBlue": "#00b4e6",
                   "colorGradientEnd": "#d1024f",
                   "colorGradientStart": "#fa7e32",
                   "colorGreen": "#1fd48e",

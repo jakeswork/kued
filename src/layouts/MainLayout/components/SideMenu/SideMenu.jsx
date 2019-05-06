@@ -30,8 +30,8 @@ class SideMenu extends Component {
 
   updateViewportState = () => {
     this.setState({
-      isMobileViewport: Viewport.mobile(),
-      isOpen: !Viewport.mobile(),
+      isMobileViewport: Viewport.isMobile(),
+      isOpen: !Viewport.isMobile(),
     });
   }
 
