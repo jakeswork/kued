@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { FiAlertTriangle, FiHeart, FiThumbsUp } from 'react-icons/fi';
+import {
+  FiAlertTriangle,
+  FiHeart,
+  FiThumbsUp,
+  FiMessageCircle,
+} from 'react-icons/fi';
 
 import propTypes from './types';
 import MainLayout from '../../layouts/MainLayout';
@@ -14,7 +19,7 @@ export const cardStyles = {
   minWidth: 240,
 };
 
-class Contact extends Component {
+class Support extends Component {
   static propTypes = propTypes;
 
   state = {
@@ -65,10 +70,9 @@ class Contact extends Component {
         <ResponsiveModal in={showType === 'support'} onClose={this.close}>
           <Text h3>Supporting Kued</Text>
           <Text>
-            Kued is an independent project with ongoing development
+            Kued is an independent project with ongoing development,
             made possible thanks to the support of awesome backers.
-            If you&apos;d like to help us out in the best way possible,
-            please consider joining them!
+            If you&apos;d like to help us out, please consider joining them!
           </Text>
           <Button
             icon={<FiHeart />}
@@ -84,7 +88,7 @@ class Contact extends Component {
           <Text>
             We want to make Kued the best it can be. To do so, we need your help.
             We call on all users of Kued to report any problems
-            they have encountered, so that we can tackle them head on
+            they have encountered so that we can tackle them head on
             and give all of our users the best experience.
           </Text>
           <Button
@@ -100,17 +104,29 @@ class Contact extends Component {
           <Text h3>Server Requests</Text>
           <Text>
             Is your server not yet supported by Kued?
-            Let your voice be heard! Head over to the vote
-            page to let us know where we&apos;re wanted!
+            Let your voice be heard! Head over and vote for your server
+            to let us know where we&apos;re wanted.
           </Text>
           <Text bold caption>
             Once a server reaches 50 vote points it will be considered for development.
           </Text>
-          <Button link="/vote" icon={<FiThumbsUp />}>Vote for your server</Button>
+          <Button link="/servers" icon={<FiThumbsUp />}>Vote for your server</Button>
         </ResponsiveModal>
+        <div className={classes.contactFooter}>
+          <Text bold>
+            You can click below to talk to somebody directly.
+          </Text>
+          <Button
+            link="https://www.twitch.tv/apparentt/"
+            icon={<FiMessageCircle />}
+            analyticsLabel="twitchMessageLink"
+          >
+            Contact
+          </Button>
+        </div>
       </MainLayout>
     );
   }
 }
 
-export default Contact;
+export default Support;

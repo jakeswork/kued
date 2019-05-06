@@ -3,7 +3,7 @@ import { slide as Menu } from 'react-burger-menu';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 import propTypes from './types';
-import MenuItems from './components/MenuItems';
+import MenuItems from '../../../../utils/MenuItems';
 import Text from '../../../../components/Text';
 import logo from '../../../../assets/kued-logotype.png';
 import menuLogo from '../../../../assets/logo.png';

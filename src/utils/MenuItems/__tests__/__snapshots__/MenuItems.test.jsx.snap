@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The MenuItems instance when rendered should return the list of buttons 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "colorGradientEnd": "#d1024f",
+      "colorGradientStart": "#fa7e32",
+      "colorGreen": "#1fd48e",
+      "colorPrimary": "#fc3a3e",
+      "colorRed": "#fb7979",
+      "colorSecondary": "#17233a",
+      "fontFamily": "Karla,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
+      "media": Object {
+        "mobile": "@media all and (max-width: 414px)",
+      },
+      "textGrey": "#ccc",
+      "textPrimary": "#2b090a",
+      "textSecondary": "#b1a0a0",
+    }
+  }
+>
+  <StaticRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+      staticContext={Object {}}
+    >
+      <MenuItems
+        classes={Object {}}
+      >
+        <NavButton
+          link="/playing"
+        >
+          <Jss(Button)
+            analyticsLabel={null}
+            danger={false}
+            flat={true}
+            icon={null}
+            link="/playing"
+            secondary={false}
+            success={false}
+          >
+            <Button
+              analyticsLabel={null}
+              classes={
+                Object {
+                  "button": "Button-button-0-1-1 Button-button-0-1-6",
+                  "buttonIcon": "Button-buttonIcon-0-1-5",
+                  "flat": "Button-flat-0-1-4",
+                  "link": "Button-link-0-1-3",
+                  "secondary": "Button-secondary-0-1-2",
+                }
+              }
+              danger={false}
+              flat={true}
+              icon={null}
+              link="/playing"
+              secondary={false}
+              success={false}
+              theme={
+                Object {
+                  "colorGradientEnd": "#d1024f",
+                  "colorGradientStart": "#fa7e32",
+                  "colorGreen": "#1fd48e",
+                  "colorPrimary": "#fc3a3e",
+                  "colorRed": "#fb7979",
+                  "colorSecondary": "#17233a",
+                  "fontFamily": "Karla,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
+                  "media": Object {
+                    "mobile": "@media all and (max-width: 414px)",
+                  },
+                  "textGrey": "#ccc",
+                  "textPrimary": "#2b090a",
+                  "textSecondary": "#b1a0a0",
+                }
+              }
+            >
+              <NavLink
+                className="Button-flat-0-1-4 Button-link-0-1-3"
+                role="button"
+                to="/playing"
+              >
+                <Route
+                  path="\\\\/playing"
+                >
+                  <Link
+                    aria-current={null}
+                    className="Button-flat-0-1-4 Button-link-0-1-3"
+                    role="button"
+                    to="/playing"
+                  >
+                    <a
+                      aria-current={null}
+                      className="Button-flat-0-1-4 Button-link-0-1-3"
+                      href="/playing"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      Live Feed
+                    </a>
+                  </Link>
+                </Route>
+              </NavLink>
+            </Button>
+          </Jss(Button)>
+        </NavButton>
+        <NavButton
+          link="/servers"
+        >
+          <Jss(Button)
+            analyticsLabel={null}
+            danger={false}
+            flat={true}
+            icon={null}
+            link="/servers"
+            secondary={false}
+            success={false}
+          >
+            <Button
+              analyticsLabel={null}
+              classes={
+                Object {
+                  "button": "Button-button-0-1-1 Button-button-0-1-7",
+                  "buttonIcon": "Button-buttonIcon-0-1-5",
+                  "flat": "Button-flat-0-1-4",
+                  "link": "Button-link-0-1-3",
+                  "secondary": "Button-secondary-0-1-2",
+                }
+              }
+              danger={false}
+              flat={true}
+              icon={null}
+              link="/servers"
+              secondary={false}
+              success={false}
+              theme={
+                Object {
+                  "colorGradientEnd": "#d1024f",
+                  "colorGradientStart": "#fa7e32",
+                  "colorGreen": "#1fd48e",
+                  "colorPrimary": "#fc3a3e",
+                  "colorRed": "#fb7979",
+                  "colorSecondary": "#17233a",
+                  "fontFamily": "Karla,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
+                  "media": Object {
+                    "mobile": "@media all and (max-width: 414px)",
+                  },
+                  "textGrey": "#ccc",
+                  "textPrimary": "#2b090a",
+                  "textSecondary": "#b1a0a0",
+                }
+              }
+            >
+              <NavLink
+                className="Button-flat-0-1-4 Button-link-0-1-3"
+                role="button"
+                to="/servers"
+              >
+                <Route
+                  path="\\\\/servers"
+                >
+                  <Link
+                    aria-current={null}
+                    className="Button-flat-0-1-4 Button-link-0-1-3"
+                    role="button"
+                    to="/servers"
+                  >
+                    <a
+                      aria-current={null}
+                      className="Button-flat-0-1-4 Button-link-0-1-3"
+                      href="/servers"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      Servers
+                    </a>
+                  </Link>
+                </Route>
+              </NavLink>
+            </Button>
+          </Jss(Button)>
+        </NavButton>
+        <NavButton
+          link="/support"
+        >
+          <Jss(Button)
+            analyticsLabel={null}
+            danger={false}
+            flat={true}
+            icon={null}
+            link="/support"
+            secondary={false}
+            success={false}
+          >
+            <Button
+              analyticsLabel={null}
+              classes={
+                Object {
+                  "button": "Button-button-0-1-1 Button-button-0-1-8",
+                  "buttonIcon": "Button-buttonIcon-0-1-5",
+                  "flat": "Button-flat-0-1-4",
+                  "link": "Button-link-0-1-3",
+                  "secondary": "Button-secondary-0-1-2",
+                }
+              }
+              danger={false}
+              flat={true}
+              icon={null}
+              link="/support"
+              secondary={false}
+              success={false}
+              theme={
+                Object {
+                  "colorGradientEnd": "#d1024f",
+                  "colorGradientStart": "#fa7e32",
+                  "colorGreen": "#1fd48e",
+                  "colorPrimary": "#fc3a3e",
+                  "colorRed": "#fb7979",
+                  "colorSecondary": "#17233a",
+                  "fontFamily": "Karla,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
+                  "media": Object {
+                    "mobile": "@media all and (max-width: 414px)",
+                  },
+                  "textGrey": "#ccc",
+                  "textPrimary": "#2b090a",
+                  "textSecondary": "#b1a0a0",
+                }
+              }
+            >
+              <NavLink
+                className="Button-flat-0-1-4 Button-link-0-1-3"
+                role="button"
+                to="/support"
+              >
+                <Route
+                  path="\\\\/support"
+                >
+                  <Link
+                    aria-current={null}
+                    className="Button-flat-0-1-4 Button-link-0-1-3"
+                    role="button"
+                    to="/support"
+                  >
+                    <a
+                      aria-current={null}
+                      className="Button-flat-0-1-4 Button-link-0-1-3"
+                      href="/support"
+                      onClick={[Function]}
+                      role="button"
+                    >
+                      Support
+                    </a>
+                  </Link>
+                </Route>
+              </NavLink>
+            </Button>
+          </Jss(Button)>
+        </NavButton>
+      </MenuItems>
+    </Router>
+  </StaticRouter>
+</ThemeProvider>
+`;

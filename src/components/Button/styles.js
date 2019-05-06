@@ -52,7 +52,7 @@ export default theme => ({
   },
   flat: {
     ...defaultStyles,
-    color: theme.colorPrimary,
+    color: '#fff',
     border: 0,
     WebkitBoxShadow: 0,
     boxShadow: 0,

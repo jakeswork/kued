@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { OutboundLink } from 'react-ga';
 import classNames from 'classnames';
 
@@ -43,7 +43,7 @@ const Button = ({
     }
 
     return (
-      <Link
+      <NavLink
         {...props}
         role="button"
         className={classNames(className, classes.link)}
@@ -51,7 +51,7 @@ const Button = ({
       >
         { children }
         { icon && React.cloneElement(icon, { className: classes.buttonIcon }) }
-      </Link>
+      </NavLink>
     );
   }
 

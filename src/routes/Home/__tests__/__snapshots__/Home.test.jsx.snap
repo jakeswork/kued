@@ -46,7 +46,7 @@ exports[`The Home instance when called with default props should render without 
         danger={false}
         flat={false}
         icon={<FiArrowRight />}
-        link="/feed"
+        link="/playing"
         secondary={false}
         success={false}
       >
@@ -57,7 +57,7 @@ exports[`The Home instance when called with default props should render without 
         danger={false}
         flat={false}
         icon={null}
-        link="/contact"
+        link="/support"
         secondary={true}
         style={
           Object {

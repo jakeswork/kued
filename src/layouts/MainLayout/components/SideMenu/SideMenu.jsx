@@ -1,12 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { FiX, FiMenu } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 import { propTypes, defaultProps } from './types';
 import Viewport from '../../../../utils/Viewport';
 import logo from '../../../../assets/kued-logotype.png';
 import Text from '../../../../components/Text';
-import MenuItems from './components/MenuItems';
+import MenuItems from '../../../../utils/MenuItems';
 
 class SideMenu extends Component {
   static propTypes = propTypes;
@@ -65,7 +66,9 @@ class SideMenu extends Component {
               style={{ color: 'white' }}
             />
           )}
-          <img src={logo} alt="Kued Logo" className={classes.logo} />
+          <Link to="/" className={classes.logo}>
+            <img src={logo} alt="Kued Logo" className={classes.logoImg} />
+          </Link>
           <div className={classes.menuItems}>
             <MenuItems />
           </div>

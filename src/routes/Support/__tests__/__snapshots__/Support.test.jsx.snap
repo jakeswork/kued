@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Contact instance When called with default properties should render without throwing any errors 1`] = `
+exports[`The Support instance When called with default properties should render without throwing any errors 1`] = `
 <Jss(MainLayout)>
   <Jss(Text)
     bold={false}
@@ -172,7 +172,7 @@ exports[`The Contact instance When called with default properties should render 
       h5={false}
       style={Object {}}
     >
-      Kued is an independent project with ongoing development made possible thanks to the support of awesome backers. If you'd like to help us out in the best way possible, please consider joining them!
+      Kued is an independent project with ongoing development, made possible thanks to the support of awesome backers. If you'd like to help us out, please consider joining them!
     </Jss(Text)>
     <Jss(Button)
       analyticsLabel="donationLink"
@@ -212,7 +212,7 @@ exports[`The Contact instance When called with default properties should render 
       h5={false}
       style={Object {}}
     >
-      We want to make Kued the best it can be. To do so, we need your help. We call on all users of Kued to report any problems they have encountered, so that we can tackle them head on and give all of our users the best experience.
+      We want to make Kued the best it can be. To do so, we need your help. We call on all users of Kued to report any problems they have encountered so that we can tackle them head on and give all of our users the best experience.
     </Jss(Text)>
     <Jss(Button)
       analyticsLabel="bugReportLink"
@@ -252,7 +252,7 @@ exports[`The Contact instance When called with default properties should render 
       h5={false}
       style={Object {}}
     >
-      Is your server not yet supported by Kued? Let your voice be heard! Head over to the vote page to let us know where we're wanted!
+      Is your server not yet supported by Kued? Let your voice be heard! Head over and vote for your server to let us know where we're wanted.
     </Jss(Text)>
     <Jss(Text)
       bold={true}
@@ -271,12 +271,37 @@ exports[`The Contact instance When called with default properties should render 
       danger={false}
       flat={false}
       icon={<FiThumbsUp />}
-      link="/vote"
+      link="/servers"
       secondary={false}
       success={false}
     >
       Vote for your server
     </Jss(Button)>
   </Jss(ResponsiveModal)>
+  <div>
+    <Jss(Text)
+      bold={true}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={false}
+      h4={false}
+      h5={false}
+      style={Object {}}
+    >
+      You can click below to talk to somebody directly.
+    </Jss(Text)>
+    <Jss(Button)
+      analyticsLabel="twitchMessageLink"
+      danger={false}
+      flat={false}
+      icon={<FiMessageCircle />}
+      link="https://www.twitch.tv/apparentt/"
+      secondary={false}
+      success={false}
+    >
+      Contact
+    </Jss(Button)>
+  </div>
 </Jss(MainLayout)>
 `;

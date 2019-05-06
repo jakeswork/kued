@@ -1,16 +1,16 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Contact, { cardStyles } from '../Contact';
+import Support, { cardStyles } from '../Support';
 
 const defaultProps = {
   classes: {},
 };
 
-describe('The Contact instance', () => {
+describe('The Support instance', () => {
   describe('When called with default properties', () => {
     it('should render without throwing any errors', () => {
-      const wrapper = shallow(<Contact {...defaultProps} />);
+      const wrapper = shallow(<Support {...defaultProps} />);
 
       expect(wrapper).toMatchSnapshot();
     });
@@ -20,7 +20,7 @@ describe('The Contact instance', () => {
     it('should fire the showHelp method', () => {
       jest.useFakeTimers();
 
-      const wrapper = shallow(<Contact {...defaultProps} />);
+      const wrapper = shallow(<Support {...defaultProps} />);
       const cards = wrapper.find({ style: cardStyles });
 
       cards.forEach((card, i) => {
@@ -39,7 +39,7 @@ describe('The Contact instance', () => {
 
   describe('when calling the close method', () => {
     it('should set the state to null', () => {
-      const wrapper = shallow(<Contact {...defaultProps} />);
+      const wrapper = shallow(<Support {...defaultProps} />);
 
       wrapper.setState({ showType: 'test' });
 

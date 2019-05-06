@@ -19,9 +19,13 @@ export default theme => ({
     padding: '16px 0',
   },
   logo: {
-    width: 160,
     position: 'fixed',
     top: 16,
+    outline: 'none',
+    border: 0,
+  },
+  logoImg: {
+    width: 160,
   },
   sideMenuFooter: {
     bottom: 16,

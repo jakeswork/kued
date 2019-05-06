@@ -19,8 +19,8 @@ const Home = ({ classes }) => (
         predict opponents and open up the best opportunities.
       </Text>
       <div className={classes.buttonsContainer}>
-        <Button link="/feed" icon={<FiArrowRight />}>Get Started</Button>
-        <Button secondary style={{ color: 'white' }} link="/contact">Learn More</Button>
+        <Button link="/playing" icon={<FiArrowRight />}>Get Started</Button>
+        <Button secondary style={{ color: 'white' }} link="/support">Learn More</Button>
       </div>
     </main>
   </header>

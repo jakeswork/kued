@@ -69,7 +69,7 @@ describe('The Button instance', () => {
         icon: <div />,
       };
       const wrapper = shallow(<Button {...newProps} />);
-      const link = wrapper.find('Link');
+      const link = wrapper.find('NavLink');
 
       expect(link.exists()).toBe(true);
     });
