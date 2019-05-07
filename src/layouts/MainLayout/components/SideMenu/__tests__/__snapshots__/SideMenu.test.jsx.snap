@@ -30,12 +30,16 @@ exports[`The SideMenu instance When called with default properties should render
     styles={Object {}}
     width={300}
   >
-    <img
-      alt="Kued Logo"
-      src="kued-logotype.png"
-    />
+    <Link
+      to="/"
+    >
+      <img
+        alt="Kued Logo"
+        src="kued-logotype.png"
+      />
+    </Link>
     <div>
-      <_default />
+      <Jss(MenuItems) />
     </div>
     <div>
       <Jss(Text)
@@ -46,6 +50,7 @@ exports[`The SideMenu instance When called with default properties should render
         h3={false}
         h4={false}
         h5={false}
+        link={null}
         style={
           Object {
             "color": "white",

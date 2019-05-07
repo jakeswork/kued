@@ -1,7 +1,8 @@
 const defaultStyles = theme => ({
   color: theme.textPrimary,
   fontFamily: theme.fontFamily,
-  fontWeight: 600,
+  fontWeight: 700,
+  marginBottom: '0.6em',
 });
 
 export default theme => ({
@@ -17,21 +18,18 @@ export default theme => ({
     fontSize: 64,
     lineHeight: '1.0625',
     letterSpacing: '-.009em',
-    marginBottom: '0.6em',
   },
   h3: {
     ...defaultStyles(theme),
     fontSize: 32,
     lineHeight: '1.125',
     letterSpacing: '.004em',
-    marginBottom: '0.4em',
   },
   h4: {
     ...defaultStyles(theme),
     fontSize: 24,
     lineHeight: '1.16667',
     letterSpacing: '.009em',
-    marginBottom: '0.4em',
   },
   h5: {
     ...defaultStyles(theme),
@@ -39,7 +37,6 @@ export default theme => ({
     lineHeight: '1.38105',
     fontWeight: 400,
     letterSpacing: '.011em',
-    marginBottom: '0.4em',
   },
   caption: {
     ...defaultStyles(theme),
@@ -48,6 +45,7 @@ export default theme => ({
     fontWeight: 400,
     letterSpacing: '-.01em',
     color: theme.textGrey,
+    marginBottom: 0,
   },
   p: {
     ...defaultStyles(theme),
@@ -55,6 +53,16 @@ export default theme => ({
     lineHeight: '1.47059',
     fontWeight: 400,
     letterSpacing: '-.022em',
+    marginBottom: '0.2em',
+  },
+  link: {
+    ...defaultStyles(theme),
+    fontSize: 17,
+    lineHeight: '1.47059',
+    fontWeight: 400,
+    letterSpacing: '-.022em',
+    textDecoration: 'none',
+    color: theme.colorBlue,
   },
   [theme.media.mobile]: {
     h1: {

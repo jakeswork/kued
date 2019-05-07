@@ -3,6 +3,8 @@
 exports[`The MainLayout instance when called with default properties should render without throwing any errors 1`] = `
 <Fragment>
   <Jss(SideMenu) />
-  <main />
+  <main>
+    <div />
+  </main>
 </Fragment>
 `;

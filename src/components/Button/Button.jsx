@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { OutboundLink } from 'react-ga';
+import classNames from 'classnames';
 
 import { propTypes, defaultProps } from './types';
 
@@ -10,6 +12,10 @@ const Button = ({
   children,
   link,
   theme,
+  icon,
+  analyticsLabel,
+  success,
+  danger,
   ...props
 }) => {
   let className = classes.button;
@@ -18,9 +24,43 @@ const Button = ({
 
   if (flat) className = classes.flat;
 
-  if (link) return <Link role="button" {...props} className={className} to={link}>{ children }</Link>;
+  if (link) {
+    if (/^https?:\/\//.test(link)) {
+      return (
+        <OutboundLink
+          {...props}
+          role="button"
+          className={classNames(className, classes.link)}
+          eventLabel={analyticsLabel}
+          to={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          { children }
+          { icon && React.cloneElement(icon, { className: classes.buttonIcon }) }
+        </OutboundLink>
+      );
+    }
 
-  return <button type="button" {...props} className={className}>{ children }</button>;
+    return (
+      <NavLink
+        {...props}
+        role="button"
+        className={classNames(className, classes.link)}
+        to={link}
+      >
+        { children }
+        { icon && React.cloneElement(icon, { className: classes.buttonIcon }) }
+      </NavLink>
+    );
+  }
+
+  return (
+    <button type="button" {...props} className={className}>
+      { children }
+      { icon && React.cloneElement(icon, { className: classes.buttonIcon }) }
+    </button>
+  );
 };
 
 Button.propTypes = propTypes;

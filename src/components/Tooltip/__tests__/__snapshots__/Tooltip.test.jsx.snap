@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Tooltip instance When called with default props should render without throwing errors 1`] = `
+<CSSTransition
+  classNames={
+    Object {
+      "enter": undefined,
+      "enterActive": undefined,
+      "exit": undefined,
+      "exitActive": undefined,
+    }
+  }
+  in={false}
+  timeout={300}
+  unmountOnExit={true}
+>
+  <div>
+    <Jss(Text)
+      bold={true}
+      caption={true}
+      h1={false}
+      h2={false}
+      h3={false}
+      h4={false}
+      h5={false}
+      link={null}
+      style={Object {}}
+    />
+  </div>
+</CSSTransition>
+`;

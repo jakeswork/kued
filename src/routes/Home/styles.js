@@ -19,7 +19,7 @@ export default theme => ({
     textAlign: 'center',
   },
   buttonsContainer: {
-    width: 332,
+    width: 360,
     padding: '2em 0',
     flexWrap: 'wrap',
     display: 'flex',

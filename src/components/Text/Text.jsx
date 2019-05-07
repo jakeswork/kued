@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'react-ga';
 
 import { propTypes, defaultProps } from './types';
 
@@ -12,6 +13,7 @@ const Text = ({
   h4,
   h5,
   caption,
+  link,
   style,
 }) => {
   let styleOverride = style;
@@ -29,6 +31,21 @@ const Text = ({
   if (h5) return <h5 style={styleOverride} className={classes.h5}>{ children }</h5>;
 
   if (caption) return <span style={styleOverride} className={classes.caption}>{ children }</span>;
+
+  if (link) {
+    return (
+      <OutboundLink
+        role="link"
+        className={classes.link}
+        eventLabel="externalLink"
+        to={link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        { children }
+      </OutboundLink>
+    );
+  }
 
   return <p style={styleOverride} className={classes.p}>{ children }</p>;
 };

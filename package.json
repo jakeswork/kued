@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
     "enzyme-to-json": "^3.3.5",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.6",
+    "react-ga": "^2.5.7",
     "react-icons": "^3.6.1",
     "react-jss": "^8.6.1",
     "react-router-dom": "^5.0.0",

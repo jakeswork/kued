@@ -12,6 +12,7 @@ exports[`The Home instance when called with default props should render without 
       h3={false}
       h4={false}
       h5={false}
+      link={null}
       style={
         Object {
           "color": "white",
@@ -28,6 +29,7 @@ exports[`The Home instance when called with default props should render without 
       h3={false}
       h4={true}
       h5={false}
+      link={null}
       style={
         Object {
           "color": "#b1a0a0",
@@ -42,21 +44,29 @@ exports[`The Home instance when called with default props should render without 
     </Jss(Text)>
     <div>
       <Jss(Button)
+        analyticsLabel={null}
+        danger={false}
         flat={false}
-        link="/feed"
+        icon={<FiArrowRight />}
+        link="/playing"
         secondary={false}
+        success={false}
       >
         Get Started
       </Jss(Button)>
       <Jss(Button)
+        analyticsLabel={null}
+        danger={false}
         flat={false}
-        link="/contact"
+        icon={null}
+        link="/support"
         secondary={true}
         style={
           Object {
             "color": "white",
           }
         }
+        success={false}
       >
         Learn More
       </Jss(Button)>

@@ -116,4 +116,17 @@ describe('The Text instance', () => {
       expect(p.props().style).toEqual(newProps.style);
     });
   });
+
+  describe('when the link prop is passed', () => {
+    it('should render an outbound link component', () => {
+      const newProps = {
+        ...defaultProps,
+        link: 'test',
+      };
+      const wrapper = shallow(<Text {...newProps} />);
+      const link = wrapper.find('OutboundLink');
+
+      expect(link.exists()).toBe(true);
+    });
+  });
 });

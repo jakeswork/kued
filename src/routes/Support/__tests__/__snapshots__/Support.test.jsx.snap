@@ -1,0 +1,336 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Support instance When called with default properties should render without throwing any errors 1`] = `
+<Jss(MainLayout)>
+  <Jss(Text)
+    bold={false}
+    caption={false}
+    h1={true}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={false}
+    link={null}
+    style={Object {}}
+  >
+    How can we help?
+  </Jss(Text)>
+  <Jss(Text)
+    bold={false}
+    caption={false}
+    h1={false}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={true}
+    link={null}
+    style={Object {}}
+  >
+    Kued was developed to help level the playing field. By providing an open view of everything that is going on within your server, you can make better decisions on what, where and when you play.
+  </Jss(Text)>
+  <Jss(Text)
+    bold={false}
+    caption={true}
+    h1={false}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={false}
+    link={null}
+    style={Object {}}
+  >
+    Click on a card to learn more.
+  </Jss(Text)>
+  <div>
+    <Jss(Card)
+      data-test-id="supportCard"
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+          "minWidth": 240,
+        }
+      }
+    >
+      <Jss(Text)
+        bold={false}
+        caption={false}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={true}
+        h5={false}
+        link={null}
+        style={Object {}}
+      >
+        Help us help you 
+        <Jss(Emoji)
+          emoji={null}
+          icon="🤝"
+          label="handshake"
+        />
+      </Jss(Text)>
+      <Jss(Text)
+        bold={true}
+        caption={true}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={false}
+        h5={false}
+        link={null}
+        style={Object {}}
+      >
+        Want to help out by supporting the project?
+      </Jss(Text)>
+    </Jss(Card)>
+    <Jss(Card)
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+          "minWidth": 240,
+        }
+      }
+    >
+      <Jss(Text)
+        bold={false}
+        caption={false}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={true}
+        h5={false}
+        link={null}
+        style={Object {}}
+      >
+        Something not right? 
+        <Jss(Emoji)
+          emoji={null}
+          icon="🛠"
+          label="hammer-and-wrench"
+        />
+      </Jss(Text)>
+      <Jss(Text)
+        bold={true}
+        caption={true}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={false}
+        h5={false}
+        link={null}
+        style={Object {}}
+      >
+        Let us know if you're having any problems.
+      </Jss(Text)>
+    </Jss(Card)>
+    <Jss(Card)
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "pointer",
+          "minWidth": 240,
+        }
+      }
+    >
+      <Jss(Text)
+        bold={false}
+        caption={false}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={true}
+        h5={false}
+        link={null}
+        style={Object {}}
+      >
+        Missing out? 
+        <Jss(Emoji)
+          emoji={null}
+          icon="😭"
+          label="loudly-crying-face"
+        />
+      </Jss(Text)>
+      <Jss(Text)
+        bold={true}
+        caption={true}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={false}
+        h5={false}
+        link={null}
+        style={Object {}}
+      >
+        Vote for us to come to your server.
+      </Jss(Text)>
+    </Jss(Card)>
+  </div>
+  <Jss(ResponsiveModal)
+    in={false}
+    onClose={[Function]}
+  >
+    <Jss(Text)
+      bold={false}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={true}
+      h4={false}
+      h5={false}
+      link={null}
+      style={Object {}}
+    >
+      Supporting Kued
+    </Jss(Text)>
+    <Jss(Text)
+      bold={false}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={false}
+      h4={false}
+      h5={false}
+      link={null}
+      style={Object {}}
+    >
+      Kued is an independent project with ongoing development, made possible thanks to the support of awesome backers. If you'd like to help us out, please consider joining them!
+    </Jss(Text)>
+    <Jss(Button)
+      analyticsLabel="donationLink"
+      danger={false}
+      flat={false}
+      icon={<FiHeart />}
+      link="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JG5ENWX7ADSKL&source=url"
+      secondary={false}
+      success={true}
+    >
+      Donate via PayPal
+    </Jss(Button)>
+  </Jss(ResponsiveModal)>
+  <Jss(ResponsiveModal)
+    in={false}
+    onClose={[Function]}
+  >
+    <Jss(Text)
+      bold={false}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={true}
+      h4={false}
+      h5={false}
+      link={null}
+      style={Object {}}
+    >
+      Reporting Issues
+    </Jss(Text)>
+    <Jss(Text)
+      bold={false}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={false}
+      h4={false}
+      h5={false}
+      link={null}
+      style={Object {}}
+    >
+      We want to make Kued the best it can be. To do so, we need your help. We call on all users of Kued to report any problems they have encountered so that we can tackle them head on and give all of our users the best experience.
+    </Jss(Text)>
+    <Jss(Button)
+      analyticsLabel="bugReportLink"
+      danger={true}
+      flat={false}
+      icon={<FiAlertTriangle />}
+      link="https://forms.gle/gu9fpS2RZytgzSbj9"
+      secondary={false}
+      success={false}
+    >
+      Report a bug
+    </Jss(Button)>
+  </Jss(ResponsiveModal)>
+  <Jss(ResponsiveModal)
+    in={false}
+    onClose={[Function]}
+  >
+    <Jss(Text)
+      bold={false}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={true}
+      h4={false}
+      h5={false}
+      link={null}
+      style={Object {}}
+    >
+      Server Requests
+    </Jss(Text)>
+    <Jss(Text)
+      bold={false}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={false}
+      h4={false}
+      h5={false}
+      link={null}
+      style={Object {}}
+    >
+      Is your server not yet supported by Kued? Let your voice be heard! Head over and vote for your server to let us know where we're wanted.
+    </Jss(Text)>
+    <Jss(Text)
+      bold={true}
+      caption={true}
+      h1={false}
+      h2={false}
+      h3={false}
+      h4={false}
+      h5={false}
+      link={null}
+      style={Object {}}
+    >
+      Once a server reaches 50 vote points it will be considered for development.
+    </Jss(Text)>
+    <Jss(Button)
+      analyticsLabel={null}
+      danger={false}
+      flat={false}
+      icon={<FiThumbsUp />}
+      link="/servers"
+      secondary={false}
+      success={false}
+    >
+      Vote for your server
+    </Jss(Button)>
+  </Jss(ResponsiveModal)>
+  <div>
+    <Jss(Text)
+      bold={true}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={false}
+      h4={false}
+      h5={false}
+      link={null}
+      style={Object {}}
+    >
+      You can click below to talk to somebody directly.
+    </Jss(Text)>
+    <Jss(Button)
+      analyticsLabel="twitchMessageLink"
+      danger={false}
+      flat={false}
+      icon={<FiMessageCircle />}
+      link="https://www.twitch.tv/apparentt/"
+      secondary={false}
+      success={false}
+    >
+      Contact
+    </Jss(Button)>
+  </div>
+</Jss(MainLayout)>
+`;

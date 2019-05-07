@@ -1,49 +1,67 @@
-const defaultStyles = theme => ({
+const defaultStyles = {
   display: 'inline-block',
   textDecoration: 'none',
   textAlign: 'center',
   position: 'relative',
-  padding: '.84375rem 1.5rem .65625rem',
-  borderRadius: '.25rem',
+  border: 0,
   WebkitBoxShadow: '0 1px 5px 0 rgba(0,0,0,0.06)',
   boxShadow: '0 1px 5px 0 rgba(0,0,0,0.06)',
   fontSize: 16,
-  fontWeight: 600,
+  fontWeight: 'bold',
   minWidth: 88,
-  fontFamily: theme.fontFamily,
-});
+  margin: '16px auto',
+  WebkitAppearance: 'none',
+  MozAppearance: 'none',
+  appearance: 'none',
+  borderRadius: 4,
+  cursor: 'pointer',
+  fontFamily: 'inherit',
+  padding: '16px 32px',
+};
 
 export default theme => ({
   [theme.media.mobile]: {
     button: {
       width: '100%',
-      margin: '16px 0',
     },
     secondary: {
       width: '100%',
-      margin: '16px 0',
+    },
+    link: {
+      width: 'calc(100% - 66px)',
     },
   },
   button: {
-    ...defaultStyles(theme),
-    backgroundColor: theme.colorPrimary,
-    border: '1px solid transparent',
+    ...defaultStyles,
+    background: ({ danger, success }) => {
+      if (danger) return theme.colorRed;
+
+      if (success) return theme.colorGreen;
+
+      return `linear-gradient(130deg, ${theme.colorGradientStart}, ${theme.colorGradientEnd}) transparent`;
+    },
+    border: 0,
     color: '#fff',
     textShadow: '0 1px 0 rgba(0,0,0,0.03)',
   },
   secondary: {
-    ...defaultStyles(theme),
+    ...defaultStyles,
     backgroundColor: 'transparent',
     border: `1px solid ${theme.textSecondary}`,
     color: theme.colorPrimary,
   },
   flat: {
-    ...defaultStyles(theme),
-    color: theme.colorPrimary,
+    ...defaultStyles,
+    color: '#fff',
     border: 0,
     WebkitBoxShadow: 0,
     boxShadow: 0,
     textTransform: 'uppercase',
     background: 'transparent',
+  },
+  buttonIcon: {
+    fontSize: 20,
+    marginLeft: 8,
+    marginBottom: -4,
   },
 });

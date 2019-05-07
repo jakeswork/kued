@@ -21,6 +21,7 @@ describe('The Button instance', () => {
       const newProps = {
         ...defaultProps,
         onClick: jest.fn(),
+        success: true,
       };
       const wrapper = shallow(<Button {...newProps} />);
       const button = wrapper.find('button');
@@ -35,6 +36,7 @@ describe('The Button instance', () => {
     it('should add a style attribute to the element with the overrides', () => {
       const newProps = {
         ...defaultProps,
+        danger: true,
         style: {
           fontSize: 0,
         },
@@ -64,11 +66,40 @@ describe('The Button instance', () => {
         ...defaultProps,
         link: '/test',
         flat: true,
+        icon: <div />,
       };
       const wrapper = shallow(<Button {...newProps} />);
-      const link = wrapper.find('Link');
+      const link = wrapper.find('NavLink');
 
       expect(link.exists()).toBe(true);
+    });
+  });
+
+  describe('when an external link is passed', () => {
+    it('should render an outboundlink component', () => {
+      const newProps = {
+        ...defaultProps,
+        link: 'https://www.example.com/',
+        analyticsLabel: 'test',
+        icon: <div />,
+      };
+      const wrapper = shallow(<Button {...newProps} />);
+      const outboundLink = wrapper.find('OutboundLink');
+
+      expect(outboundLink.exists()).toBe(true);
+    });
+  });
+
+  describe('when the icon prop is passed', () => {
+    it('should render the icon inside the button', () => {
+      const newProps = {
+        ...defaultProps,
+        icon: <div data-test-id="icon" />,
+      };
+      const wrapper = shallow(<Button {...newProps} />);
+      const icon = wrapper.find({ 'data-test-id': 'icon' });
+
+      expect(icon.exists()).toBe(true);
     });
   });
 });
