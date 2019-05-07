@@ -39,6 +39,11 @@ class Support extends Component {
         <Text h1>
           How can we help?
         </Text>
+        <Text h5>
+          Kued was developed to help level the playing field.
+          By providing an open view of everything that is going on within your server,
+          you can make better decisions on what, where and when you play.
+        </Text>
         <Text caption>Click on a card to learn more.</Text>
         <div className={classes.cardsWrapper}>
           <Card

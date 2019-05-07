@@ -17,6 +17,19 @@ exports[`The Support instance When called with default properties should render 
   </Jss(Text)>
   <Jss(Text)
     bold={false}
+    caption={false}
+    h1={false}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={true}
+    link={null}
+    style={Object {}}
+  >
+    Kued was developed to help level the playing field. By providing an open view of everything that is going on within your server, you can make better decisions on what, where and when you play.
+  </Jss(Text)>
+  <Jss(Text)
+    bold={false}
     caption={true}
     h1={false}
     h2={false}
