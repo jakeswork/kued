@@ -21,6 +21,7 @@ class Input extends Component {
         {
           placeholder && (
             <span
+              data-test-id="placeholder"
               className={
                 classNames(
                   classes.placeholder,
@@ -35,7 +36,7 @@ class Input extends Component {
         <input
           ref={(ref) => { this.input = ref; }}
           onFocus={() => this.setState({ isFocused: true })}
-          onBlur={() => this.setState({ isFocused: this.input.value.length })}
+          onBlur={() => this.setState({ isFocused: this.input.value.length > 0 })}
           className={
             classNames(
               classes.input,

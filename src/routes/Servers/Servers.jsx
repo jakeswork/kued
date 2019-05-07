@@ -29,6 +29,7 @@ class Servers extends Component {
           as well as the status of other servers.
         </Text>
         <Input
+          data-test-id="searchInput"
           placeholder="Enter a server name"
           onChange={e => this.setState({ searchInput: e.target.value.toLowerCase().replace(/ /g, '') })}
         />

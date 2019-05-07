@@ -29,6 +29,7 @@ exports[`The Servers instance When called with default props should render witho
     Kued is bespoke software. Below you can find a list of currently supported servers, as well as the status of other servers.
   </Jss(Text)>
   <Jss(Input)
+    data-test-id="searchInput"
     onChange={[Function]}
     placeholder="Enter a server name"
   />
