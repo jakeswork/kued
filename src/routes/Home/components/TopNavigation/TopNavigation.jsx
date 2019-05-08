@@ -7,7 +7,7 @@ import MenuItems from '../../../../utils/MenuItems';
 import Text from '../../../../components/Text';
 import logo from '../../../../assets/kued-logotype.png';
 import menuLogo from '../../../../assets/logo.png';
-import Viewport from '../../../../utils/Viewport';
+import viewport from '../../../../utils/viewport';
 
 class TopNavigation extends Component {
   static propTypes = propTypes;
@@ -27,7 +27,7 @@ class TopNavigation extends Component {
   }
 
   updateViewportState = () => {
-    this.setState({ isMobileViewport: Viewport.isMobile() });
+    this.setState({ isMobileViewport: viewport.isMobile() });
   }
 
   render() {

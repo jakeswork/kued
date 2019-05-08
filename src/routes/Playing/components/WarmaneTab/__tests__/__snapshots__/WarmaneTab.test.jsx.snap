@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The WarmaneTab instance When called with default props should render without throwing an error 1`] = `
+<TabPanel
+  className="react-tabs__tab-panel"
+  forceRender={false}
+  selectedClassName="react-tabs__tab-panel--selected"
+>
+  <Tabs
+    defaultFocus={false}
+    defaultIndex={null}
+    forceRenderTabPanel={false}
+    selectedIndex={null}
+  >
+    <TabList
+      className="react-tabs__tab-list"
+    >
+      <Jss(TabHeading)
+        sub={true}
+      >
+        TBC
+      </Jss(TabHeading)>
+      <Jss(TabHeading)
+        sub={true}
+      >
+        WoTLK
+      </Jss(TabHeading)>
+    </TabList>
+    <Jss(ServerTabLayout)
+      dropdownOnChange={[Function]}
+      dropdownOptionDefault={
+        Object {
+          "label": "2v2",
+          "value": "2v2",
+        }
+      }
+      dropdownOptions={
+        Array [
+          Object {
+            "label": "2v2",
+            "value": "2v2",
+          },
+          Object {
+            "label": "3v3",
+            "value": "3v3",
+          },
+        ]
+      }
+    >
+      TBC
+    </Jss(ServerTabLayout)>
+    <Jss(ServerTabLayout)
+      dropdownOnChange={[Function]}
+      dropdownOptionDefault={
+        Object {
+          "label": "2v2",
+          "value": "2v2",
+        }
+      }
+      dropdownOptions={
+        Array [
+          Object {
+            "label": "2v2",
+            "value": "2v2",
+          },
+          Object {
+            "label": "3v3",
+            "value": "3v3",
+          },
+        ]
+      }
+    >
+      WoTLK
+    </Jss(ServerTabLayout)>
+  </Tabs>
+</TabPanel>
+`;

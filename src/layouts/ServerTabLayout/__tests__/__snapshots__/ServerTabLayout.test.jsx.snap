@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The ServerTabLayout instance When called with default props should render without throwing an error 1`] = `
+<TabPanel
+  className="react-tabs__tab-panel"
+  forceRender={false}
+  selectedClassName="react-tabs__tab-panel--selected"
+>
+  <div>
+    <StateManager
+      data-test-id="Select"
+      defaultInputValue=""
+      defaultMenuIsOpen={false}
+      defaultValue={
+        Object {
+          "label": "",
+          "value": "",
+        }
+      }
+      onChange={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "",
+            "value": "",
+          },
+        ]
+      }
+      placeholder="Select Bracket"
+      theme={[Function]}
+    />
+    <div />
+  </div>
+</TabPanel>
+`;

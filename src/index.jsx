@@ -11,6 +11,7 @@ import theme from './utils/theme';
 import Home from './routes/Home';
 import Support from './routes/Support';
 import Servers from './routes/Servers';
+import Playing from './routes/Playing';
 
 const App = () => (
   <ThemeProvider theme={theme}>
@@ -19,6 +20,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/support" component={Support} />
         <Route exact path="/servers" component={Servers} />
+        <Route exact path="/playing" component={Playing} />
       </Switch>
     </BrowserRouter>
   </ThemeProvider>

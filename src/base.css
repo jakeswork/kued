@@ -11,12 +11,13 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: 400 16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif
+  font: 400 16px/1.5 "Karla",system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
 body {
   letter-spacing: -.022em;
   background-color: #fff;
+  color: #2b090a;
   font-style: normal;
   font-synthesis: none;
   font-feature-settings: 'kern';

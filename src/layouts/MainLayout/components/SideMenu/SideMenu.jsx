@@ -4,7 +4,7 @@ import { FiX, FiMenu } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 import { propTypes, defaultProps } from './types';
-import Viewport from '../../../../utils/Viewport';
+import viewport from '../../../../utils/viewport';
 import logo from '../../../../assets/kued-logotype.png';
 import Text from '../../../../components/Text';
 import MenuItems from '../../../../utils/MenuItems';
@@ -30,8 +30,8 @@ class SideMenu extends Component {
 
   updateViewportState = () => {
     this.setState({
-      isMobileViewport: Viewport.isMobile(),
-      isOpen: !Viewport.isMobile(),
+      isMobileViewport: viewport.isMobile(),
+      isOpen: !viewport.isMobile(),
     });
   }
 
