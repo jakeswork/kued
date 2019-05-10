@@ -5,6 +5,8 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "enzyme-to-json": "^3.3.5",
+    "fs-extra": "^7.0.1",
+    "lodash": "^4.17.11",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-burger-menu": "^2.6.10",
@@ -23,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "create": "node scripts/createComponent.js"
   },
   "jest": {
     "collectCoverageFrom": [
