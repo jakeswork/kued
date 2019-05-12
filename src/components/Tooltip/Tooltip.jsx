@@ -8,6 +8,7 @@ const Tooltip = ({
   classes,
   children,
   visible,
+  style,
   ...props
 }) => (
   <CSSTransition
@@ -22,7 +23,7 @@ const Tooltip = ({
     in={visible}
     {...props}
   >
-    <div className={classes.root}>
+    <div className={classes.root} style={style}>
       <Text caption bold>
         { children }
       </Text>

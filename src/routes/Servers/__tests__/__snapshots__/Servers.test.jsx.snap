@@ -35,6 +35,7 @@ exports[`The Servers instance When called with default props should render witho
   />
   <div>
     <Jss(Card)
+      className={null}
       key="Warmane"
       style={
         Object {
@@ -99,6 +100,7 @@ exports[`The Servers instance When called with default props should render witho
       </Jss(Chip)>
     </Jss(Card)>
     <Jss(Card)
+      className={null}
       key="WoW Circle"
       style={
         Object {
@@ -145,6 +147,7 @@ exports[`The Servers instance When called with default props should render witho
       </Jss(Chip)>
     </Jss(Card)>
     <Jss(Card)
+      className={null}
       key="TwinStar"
       style={
         Object {

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Players instance When rendered with default props should render without throwing an error 1`] = `
+<div>
+  <Component
+    color="#fc3a3e"
+    loading={true}
+    size={24}
+    sizeUnit="px"
+  />
+</div>
+`;

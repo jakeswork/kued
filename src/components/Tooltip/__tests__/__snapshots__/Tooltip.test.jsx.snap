@@ -14,7 +14,9 @@ exports[`The Tooltip instance When called with default props should render witho
   timeout={300}
   unmountOnExit={true}
 >
-  <div>
+  <div
+    style={Object {}}
+  >
     <Jss(Text)
       bold={true}
       caption={true}

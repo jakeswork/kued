@@ -43,6 +43,7 @@ exports[`The Support instance When called with default properties should render 
   </Jss(Text)>
   <div>
     <Jss(Card)
+      className={null}
       data-test-id="supportCard"
       onClick={[Function]}
       style={
@@ -85,6 +86,7 @@ exports[`The Support instance When called with default properties should render 
       </Jss(Text)>
     </Jss(Card)>
     <Jss(Card)
+      className={null}
       onClick={[Function]}
       style={
         Object {
@@ -126,6 +128,7 @@ exports[`The Support instance When called with default properties should render 
       </Jss(Text)>
     </Jss(Card)>
     <Jss(Card)
+      className={null}
       onClick={[Function]}
       style={
         Object {
