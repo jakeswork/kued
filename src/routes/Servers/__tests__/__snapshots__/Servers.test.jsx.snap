@@ -29,12 +29,14 @@ exports[`The Servers instance When called with default props should render witho
     Kued is bespoke software. Below you can find a list of currently supported servers, as well as the status of other servers.
   </Jss(Text)>
   <Jss(Input)
+    className=""
     data-test-id="searchInput"
     onChange={[Function]}
-    placeholder="Enter a server name"
+    placeholder="Search servers"
   />
   <div>
     <Jss(Card)
+      className={null}
       key="Warmane"
       style={
         Object {
@@ -99,6 +101,7 @@ exports[`The Servers instance When called with default props should render witho
       </Jss(Chip)>
     </Jss(Card)>
     <Jss(Card)
+      className={null}
       key="WoW Circle"
       style={
         Object {
@@ -145,6 +148,7 @@ exports[`The Servers instance When called with default props should render witho
       </Jss(Chip)>
     </Jss(Card)>
     <Jss(Card)
+      className={null}
       key="TwinStar"
       style={
         Object {

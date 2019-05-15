@@ -30,12 +30,12 @@ class Servers extends Component {
         </Text>
         <Input
           data-test-id="searchInput"
-          placeholder="Enter a server name"
+          placeholder="Search servers"
           onChange={e => this.setState({ searchInput: e.target.value.toLowerCase().replace(/ /g, '') })}
         />
         <div className={classes.grid}>
           {
-            servers.filter(server => server.url.indexOf(searchInput) > -1)
+            servers.filter(server => server.url.includes(searchInput))
               .map(server => (
                 <Card style={{ width: 275 }} key={server.name}>
                   <div className={classes.serverInfo}>

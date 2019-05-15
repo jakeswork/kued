@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Playing instance When called with default props should render without throwing an error 1`] = `
+<Jss(MainLayout)>
+  <Jss(Text)
+    bold={false}
+    caption={false}
+    h1={true}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={false}
+    link={null}
+    style={Object {}}
+  >
+    Playing
+  </Jss(Text)>
+  <Tabs
+    defaultFocus={false}
+    defaultIndex={null}
+    forceRenderTabPanel={false}
+    selectedIndex={null}
+  >
+    <TabList
+      className="react-tabs__tab-list"
+    >
+      <Jss(TabHeading)
+        sub={false}
+      >
+        Warmane
+      </Jss(TabHeading)>
+    </TabList>
+    <Jss(WarmaneTab) />
+  </Tabs>
+</Jss(MainLayout)>
+`;

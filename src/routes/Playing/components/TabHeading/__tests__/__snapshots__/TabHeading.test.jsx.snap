@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The TabHeading instance When rendered with default props should render without throwing errors 1`] = `
+<Tab
+  className="react-tabs__tab"
+  disabledClassName="react-tabs__tab--disabled"
+  focus={false}
+  id={null}
+  panelId={null}
+  selected={false}
+  selectedClassName="react-tabs__tab--selected"
+>
+  <Jss(Text)
+    bold={true}
+    caption={false}
+    h1={false}
+    h2={false}
+    h3={false}
+    h4={true}
+    h5={false}
+    link={null}
+    style={Object {}}
+  />
+</Tab>
+`;

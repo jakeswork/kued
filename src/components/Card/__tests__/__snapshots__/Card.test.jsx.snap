@@ -1,3 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The Card instance When called with default props should render without crashing 1`] = `<div />`;
+exports[`The Card instance When called with default props should render without crashing 1`] = `
+<div
+  className=""
+/>
+`;

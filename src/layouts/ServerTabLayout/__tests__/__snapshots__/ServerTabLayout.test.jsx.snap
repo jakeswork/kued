@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The ServerTabLayout instance When called with default props should render without throwing an error 1`] = `
+<TabPanel
+  className="react-tabs__tab-panel"
+  forceRender={false}
+  selectedClassName="react-tabs__tab-panel--selected"
+>
+  <div />
+</TabPanel>
+`;

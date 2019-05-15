@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import { propTypes, defaultProps } from './types';
 
@@ -6,9 +7,10 @@ const Card = ({
   classes,
   children,
   theme,
+  className,
   ...props
 }) => (
-  <div className={classes.root} {...props}>
+  <div className={classNames(classes.root, className)} {...props}>
     { children }
   </div>
 );

@@ -15,6 +15,7 @@ exports[`The ResponsiveModal instance When called with default props should rend
 >
   <div>
     <Jss(Card)
+      className={null}
       style={
         Object {
           "width": "calc(100% - 80px)",

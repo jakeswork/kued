@@ -1,5 +1,5 @@
 const defaultStyles = theme => ({
-  color: theme.textPrimary,
+  color: 'inherit',
   fontFamily: theme.fontFamily,
   fontWeight: 700,
   marginBottom: '0.6em',

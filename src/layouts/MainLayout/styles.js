@@ -5,7 +5,7 @@ export default theme => ({
     textAlign: 'center',
   },
   root: {
-    maxWidth: 720,
+    maxWidth: 800,
     margin: '0 auto',
   },
   [theme.media.mobile]: {
