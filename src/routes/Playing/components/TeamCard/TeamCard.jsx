@@ -33,7 +33,7 @@ const TeamCard = ({ classes, team }) => {
             </Text>
           </div>
         </div>
-        <div>
+        <div className={classes.nameWrapper}>
           <Text h4>
             { team.name }
           </Text>

@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { CircleSpinner } from 'react-spinners-kit';
 import classNames from 'classnames';
+import { FiMessageCircle } from 'react-icons/fi';
 
 import { propTypes, defaultProps } from './types';
 import Text from '../../../../../../components/Text';
+import Button from '../../../../../../components/Button';
 import Tooltip from '../../../../../../components/Tooltip';
 
 class Players extends Component {
@@ -15,6 +17,7 @@ class Players extends Component {
     players: [],
     loading: false,
     onlineIndicatorHovered: null,
+    error: false,
   };
 
   componentDidMount() {
@@ -35,13 +38,21 @@ class Players extends Component {
       const response = await fetch(`http://localhost:4000/api/v1/warmane/player/${player.charname}/${player.realm}`);
 
       return await response.json();
-    } catch (error) {
-      return Promise.reject(new Error(error));
+    } catch (error) /* istanbul ignore next */ {
+      // eslint-disable-next-line no-console
+      console.error(new Error(error));
+
+      return this.setState({ error: true });
     }
   }
 
   render() {
-    const { players, loading, onlineIndicatorHovered } = this.state;
+    const {
+      players,
+      loading,
+      onlineIndicatorHovered,
+      error,
+    } = this.state;
     const { classes } = this.props;
 
     return (
@@ -52,7 +63,27 @@ class Players extends Component {
           size={24}
         />
         {
-          !loading && players.map((player, i) => (
+          error && (
+            <Fragment>
+              <Text h4 data-test-id="errorHeading">Oops!</Text>
+              <Text bold>
+                It looks like the server is failing to respond.&nbsp;
+                Please wait a moment and try again.
+              </Text>
+              <br />
+              <Text>
+                Is this happening regularly?
+                Head over to the support
+                page and let us know.
+              </Text>
+              <Button link="/support" secondary icon={<FiMessageCircle />}>
+                Support
+              </Button>
+            </Fragment>
+          )
+        }
+        {
+          (!loading && !error) && players.map((player, i) => (
             <div className={classes.playerWrapper} key={player.name}>
               <div
                 className={classes.playerNameWrapper}
@@ -61,7 +92,6 @@ class Players extends Component {
                 data-test-id="playerWrapper"
               >
                 <Text h5>
-                  { player.name }
                   <span
                     className={classNames(
                       classes.onlineIndicator,
@@ -76,8 +106,19 @@ class Players extends Component {
                       { player.online ? 'Online' : 'Offline' }
                     </Tooltip>
                   </span>
+                  { player.name }
+                  &nbsp;
+                  {
+                    player.guild && (
+                      <Text caption bold>
+                        &lt;
+                        { player.guild }
+                        &gt;
+                      </Text>
+                    )
+                  }
                 </Text>
-                <Text caption>
+                <Text>
                   Level&nbsp;
                   { player.level }
                   &nbsp;
@@ -92,16 +133,30 @@ class Players extends Component {
               </div>
               <div className={classes.playerRatingWrapper}>
                 {
-                  player.pvpteams && player.pvpteams.map(team => (
-                    <div className={classes.playerRating} key={team.name}>
-                      <Text caption>
-                        { team.type }
-                      </Text>
-                      <Text bold>
-                        { team.rating }
-                      </Text>
-                    </div>
-                  ))
+                  player.pvpteams && (
+                    player.pvpteams.constructor === Array
+                      ? (
+                        player.pvpteams.map(team => (
+                          <div className={classes.playerRating} key={team.name}>
+                            <Text caption>
+                              { team.type }
+                            </Text>
+                            <Text bold>
+                              { team.rating }
+                            </Text>
+                          </div>
+                        ))
+                      ) : (
+                        <div className={classes.playerRating} key={player.pvpteams[1].name}>
+                          <Text caption>
+                            { player.pvpteams[1].type }
+                          </Text>
+                          <Text bold>
+                            { player.pvpteams[1].rating }
+                          </Text>
+                        </div>
+                      )
+                  )
                 }
               </div>
             </div>

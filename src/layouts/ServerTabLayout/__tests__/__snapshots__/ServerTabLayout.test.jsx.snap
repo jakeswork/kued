@@ -6,30 +6,6 @@ exports[`The ServerTabLayout instance When called with default props should rend
   forceRender={false}
   selectedClassName="react-tabs__tab-panel--selected"
 >
-  <div>
-    <StateManager
-      data-test-id="Select"
-      defaultInputValue=""
-      defaultMenuIsOpen={false}
-      defaultValue={
-        Object {
-          "label": "",
-          "value": "",
-        }
-      }
-      onChange={[Function]}
-      options={
-        Array [
-          Object {
-            "label": "",
-            "value": "",
-          },
-        ]
-      }
-      placeholder="Select Bracket"
-      theme={[Function]}
-    />
-    <div />
-  </div>
+  <div />
 </TabPanel>
 `;

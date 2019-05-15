@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import Players from '../Players';
+import mockResolvedPlayerData from '../__mocks__/mockResolvedPlayerData';
 
 const defaultProps = {
   classes: {},
@@ -20,20 +21,7 @@ const defaultProps = {
     },
   ],
 };
-const mockResolvedPlayerData = [{
-  spec: 'Feral Combat',
-  name: 'Apparent',
-  realm: 'Icecrown',
-  online: false,
-  level: '80',
-  race: 'Night Elf',
-  class: 'Druid',
-  pvpteams: [{
-    type: '2v2', name: 'Hello', rating: '2181', rank: '18',
-  }, {
-    type: '3v3', name: 'apparent', rating: '336', rank: '100+',
-  }],
-}];
+
 describe('The Players instance', () => {
   describe('When rendered with default props', () => {
     it('should render without throwing an error', () => {
@@ -60,11 +48,11 @@ describe('The Players instance', () => {
 
         wrapper.setState({ loading: false, players: mockResolvedPlayerData });
 
-        const playerWrapper = wrapper.find({ 'data-test-id': 'playerWrapper' });
+        const playerWrapper = wrapper.find({ 'data-test-id': 'playerWrapper' }).first();
 
         playerWrapper.simulate('mouseenter');
 
-        const Tooltip = wrapper.find({ 'data-test-id': 'Tooltip' });
+        const Tooltip = wrapper.find({ 'data-test-id': 'Tooltip' }).first();
 
         expect(Tooltip.props().children).toEqual('Offline');
 
@@ -104,6 +92,18 @@ describe('The Players instance', () => {
 
       expect(global.fetch).toHaveBeenCalledTimes(1);
       expect(global.fetch).toHaveBeenCalledWith(`http://localhost:4000/api/v1/warmane/player/${newProps.players[0].charname}/${newProps.players[0].realm}`);
+    });
+  });
+
+  describe('When the error state is set', () => {
+    it('Should render an error message', () => {
+      const wrapper = shallow(<Players {...defaultProps} />);
+
+      wrapper.setState({ error: true });
+
+      const errorHeading = wrapper.find({ 'data-test-id': 'errorHeading' });
+
+      expect(errorHeading.exists()).toBe(true);
     });
   });
 });

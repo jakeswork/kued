@@ -1,4 +1,4 @@
-export default {
+export default theme => ({
   card: {
     width: 'calc(100% - 64px)',
     margin: '16px 0',
@@ -8,6 +8,7 @@ export default {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    flexWrap: 'wrap',
   },
   icon: {
     fontSize: 24,
@@ -21,4 +22,12 @@ export default {
   lastPlayed: {
     flexDirection: 'column',
   },
-};
+  nameWrapper: {
+    margin: '0 auto',
+  },
+  [theme.media.mobile]: {
+    small: {
+      width: '100%',
+    },
+  },
+});

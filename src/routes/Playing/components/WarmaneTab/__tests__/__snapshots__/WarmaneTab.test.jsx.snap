@@ -3,75 +3,81 @@
 exports[`The WarmaneTab instance When called with default props should render without throwing an error 1`] = `
 <TabPanel
   className="react-tabs__tab-panel"
-  forceRender={false}
+  forceRender={true}
   selectedClassName="react-tabs__tab-panel--selected"
 >
   <Tabs
+    data-test-id="Tabs"
     defaultFocus={false}
     defaultIndex={null}
     forceRenderTabPanel={false}
+    onSelect={[Function]}
     selectedIndex={null}
   >
-    <TabList
-      className="react-tabs__tab-list"
-    >
-      <Jss(TabHeading)
-        sub={true}
+    <div>
+      <TabList
+        className="react-tabs__tab-list"
       >
-        TBC
-      </Jss(TabHeading)>
-      <Jss(TabHeading)
-        sub={true}
-      >
-        WoTLK
-      </Jss(TabHeading)>
-    </TabList>
-    <Jss(ServerTabLayout)
-      dropdownOnChange={[Function]}
-      dropdownOptionDefault={
-        Object {
-          "label": "2v2",
-          "value": "2v2",
-        }
-      }
-      dropdownOptions={
-        Array [
+        <Jss(TabHeading)
+          sub={true}
+        >
+          TBC
+        </Jss(TabHeading)>
+        <Jss(TabHeading)
+          sub={true}
+        >
+          WoTLK
+        </Jss(TabHeading)>
+      </TabList>
+      <Jss(Input)
+        className=""
+        data-test-id="searchInput"
+        onChange={[Function]}
+        placeholder="Search teams"
+      />
+      <StateManager
+        data-test-id="Select"
+        defaultInputValue=""
+        defaultMenuIsOpen={false}
+        defaultValue={
           Object {
             "label": "2v2",
             "value": "2v2",
-          },
-          Object {
-            "label": "3v3",
-            "value": "3v3",
-          },
-        ]
-      }
-    >
-      TBC
-    </Jss(ServerTabLayout)>
-    <Jss(ServerTabLayout)
-      dropdownOnChange={[Function]}
-      dropdownOptionDefault={
-        Object {
-          "label": "2v2",
-          "value": "2v2",
+          }
         }
-      }
-      dropdownOptions={
-        Array [
+        onChange={[Function]}
+        options={
+          Array [
+            Object {
+              "label": "2v2",
+              "value": "2v2",
+            },
+            Object {
+              "label": "3v3",
+              "value": "3v3",
+            },
+          ]
+        }
+        placeholder="Select Bracket"
+        styles={
           Object {
-            "label": "2v2",
-            "value": "2v2",
-          },
-          Object {
-            "label": "3v3",
-            "value": "3v3",
-          },
-        ]
-      }
-    >
-      WoTLK
-    </Jss(ServerTabLayout)>
+            "control": [Function],
+            "option": [Function],
+          }
+        }
+        theme={[Function]}
+      />
+    </div>
+    <Jss(ServerTabLayout) />
+    <Jss(ServerTabLayout) />
+    <span>
+      <Component
+        color="#fc3a3e"
+        loading={true}
+        size={24}
+        sizeUnit="px"
+      />
+    </span>
   </Tabs>
 </TabPanel>
 `;

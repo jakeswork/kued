@@ -28,10 +28,11 @@ export default theme => ({
   placeholderActive: {
     top: -6,
     left: 8,
+    fontWeight: 'bold',
     fontSize: 12,
     color: theme.colorPrimary,
   },
   inputActive: {
-    borderColor: theme.colorPrimary,
+    border: `2px solid ${theme.colorPrimary}`,
   },
 });

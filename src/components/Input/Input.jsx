@@ -13,11 +13,16 @@ class Input extends Component {
   };
 
   render() {
-    const { classes, placeholder, ...props } = this.props;
+    const {
+      classes,
+      placeholder,
+      className,
+      ...props
+    } = this.props;
     const { isFocused } = this.state;
 
     return (
-      <div className={classes.root}>
+      <div className={classNames(classes.root, className)}>
         {
           placeholder && (
             <span

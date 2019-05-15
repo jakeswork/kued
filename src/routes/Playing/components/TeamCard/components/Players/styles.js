@@ -5,6 +5,7 @@ export default theme => ({
     padding: '16px 0',
     flexDirection: 'column',
     alignItems: 'center',
+    flexWrap: 'wrap',
   },
   playerWrapper: {
     display: 'flex',
@@ -20,7 +21,7 @@ export default theme => ({
   onlineIndicator: {
     display: 'inline-block',
     position: 'relative',
-    marginLeft: 8,
+    marginRight: 8,
     width: 12,
     height: 12,
     borderRadius: '100%',
