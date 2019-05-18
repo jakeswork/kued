@@ -1,11 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The TeamCard instance When rendered with default props should render without throwing an error 1`] = `
+exports[`The TeamCard instance When a team has a loss Should render loss text 1`] = `
 <Jss(Card)
   className={null}
   data-test-id="Card"
   onClick={[Function]}
 >
+  <span>
+    <Jss(Text)
+      bold={false}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={false}
+      h4={false}
+      h5={false}
+      link={null}
+      style={Object {}}
+    >
+      Lost their last game
+    </Jss(Text)>
+  </span>
   <div>
     <div>
       <div>
@@ -72,7 +87,9 @@ exports[`The TeamCard instance When rendered with default props should render wi
         h5={false}
         link={null}
         style={Object {}}
-      />
+      >
+        test
+      </Jss(Text)>
       <Jss(Text)
         bold={true}
         caption={true}
@@ -111,7 +128,176 @@ exports[`The TeamCard instance When rendered with default props should render wi
         h5={false}
         link={null}
         style={Object {}}
+      >
+        1 hour ago
+      </Jss(Text)>
+    </div>
+  </div>
+  <UnmountClosed
+    isOpened={false}
+    springConfig={
+      Object {
+        "damping": 14,
+        "stiffness": 120,
+      }
+    }
+  >
+    <Jss(Players)
+      players={
+        Array [
+          Object {
+            "charname": "",
+            "damageDone": "",
+            "deaths": "",
+            "healingDone": "",
+            "killingBlows": "",
+            "matchmaking_change": "",
+            "personal_change": "",
+            "realm": "",
+            "teamname": "",
+            "teamnamerich": "",
+          },
+        ]
+      }
+    />
+  </UnmountClosed>
+  <FiChevronDown
+    data-test-id="ChevronDown"
+  />
+</Jss(Card)>
+`;
+
+exports[`The TeamCard instance When rendered with default props should render without throwing an error 1`] = `
+<Jss(Card)
+  className={null}
+  data-test-id="Card"
+  onClick={[Function]}
+>
+  <span>
+    <Jss(Text)
+      bold={false}
+      caption={false}
+      h1={false}
+      h2={false}
+      h3={false}
+      h4={false}
+      h5={false}
+      link={null}
+      style={Object {}}
+    >
+      Won their last game
+    </Jss(Text)>
+  </span>
+  <div>
+    <div>
+      <div>
+        <Jss(Text)
+          bold={false}
+          caption={true}
+          h1={false}
+          h2={false}
+          h3={false}
+          h4={false}
+          h5={false}
+          link={null}
+          style={Object {}}
+        >
+          Rank
+        </Jss(Text)>
+        <Jss(Text)
+          bold={true}
+          caption={false}
+          h1={false}
+          h2={false}
+          h3={false}
+          h4={false}
+          h5={false}
+          link={null}
+          style={Object {}}
+        />
+      </div>
+      <div>
+        <Jss(Text)
+          bold={false}
+          caption={true}
+          h1={false}
+          h2={false}
+          h3={false}
+          h4={false}
+          h5={false}
+          link={null}
+          style={Object {}}
+        >
+          Rating
+        </Jss(Text)>
+        <Jss(Text)
+          bold={true}
+          caption={false}
+          h1={false}
+          h2={false}
+          h3={false}
+          h4={false}
+          h5={false}
+          link={null}
+          style={Object {}}
+        />
+      </div>
+    </div>
+    <div>
+      <Jss(Text)
+        bold={false}
+        caption={false}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={true}
+        h5={false}
+        link={null}
+        style={Object {}}
+      >
+        test
+      </Jss(Text)>
+      <Jss(Text)
+        bold={true}
+        caption={true}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={false}
+        h5={false}
+        link={null}
+        style={Object {}}
       />
+    </div>
+    <div
+      className=""
+    >
+      <Jss(Text)
+        bold={false}
+        caption={true}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={false}
+        h5={false}
+        link={null}
+        style={Object {}}
+      >
+        Last Played
+      </Jss(Text)>
+      <Jss(Text)
+        bold={true}
+        caption={false}
+        h1={false}
+        h2={false}
+        h3={false}
+        h4={false}
+        h5={false}
+        link={null}
+        style={Object {}}
+      >
+        1 hour ago
+      </Jss(Text)>
     </div>
   </div>
   <UnmountClosed

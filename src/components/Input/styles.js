@@ -5,6 +5,7 @@ export default theme => ({
     border: `1px solid ${theme.textGrey}`,
     borderRadius: 4,
     fontSize: 16,
+    width: 'calc(100% - 32px)',
     fontFamily: theme.fontFamily,
   },
   root: {

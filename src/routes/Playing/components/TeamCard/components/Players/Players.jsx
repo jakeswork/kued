@@ -1,12 +1,11 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { CircleSpinner } from 'react-spinners-kit';
 import classNames from 'classnames';
-import { FiMessageCircle } from 'react-icons/fi';
 
 import { propTypes, defaultProps } from './types';
 import Text from '../../../../../../components/Text';
-import Button from '../../../../../../components/Button';
 import Tooltip from '../../../../../../components/Tooltip';
+import ErrorMessage from '../../../../../../components/ErrorMessage';
 
 class Players extends Component {
   static propTypes = propTypes;
@@ -62,26 +61,7 @@ class Players extends Component {
           color="#fc3a3e"
           size={24}
         />
-        {
-          error && (
-            <Fragment>
-              <Text h4 data-test-id="errorHeading">Oops!</Text>
-              <Text bold>
-                It looks like the server is failing to respond.&nbsp;
-                Please wait a moment and try again.
-              </Text>
-              <br />
-              <Text>
-                Is this happening regularly?
-                Head over to the support
-                page and let us know.
-              </Text>
-              <Button link="/support" secondary icon={<FiMessageCircle />}>
-                Support
-              </Button>
-            </Fragment>
-          )
-        }
+        <ErrorMessage error={error} />
         {
           (!loading && !error) && players.map((player, i) => (
             <div className={classes.playerWrapper} key={player.name}>

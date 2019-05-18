@@ -14,6 +14,11 @@ const TeamCard = ({ classes, team }) => {
 
   return (
     <Card className={classes.card} onClick={() => setOpened(!opened)} data-test-id="Card">
+      <span className={classes.outcome}>
+        <Text>
+          { `${team.lastPlayed.outcome === 'Loss' ? 'Lost' : 'Won'} their last game` }
+        </Text>
+      </span>
       <div className={classes.root}>
         <div className={classes.small}>
           <div>

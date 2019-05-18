@@ -25,6 +25,10 @@ export default theme => ({
   nameWrapper: {
     margin: '0 auto',
   },
+  outcome: props => ({
+    color: props.team.lastPlayed.outcome === 'Loss' ? theme.colorRed : theme.colorGreen,
+    marginBottom: 8,
+  }),
   [theme.media.mobile]: {
     small: {
       width: '100%',

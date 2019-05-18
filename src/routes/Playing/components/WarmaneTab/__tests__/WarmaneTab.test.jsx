@@ -91,16 +91,4 @@ describe('The WarmaneTab instance', () => {
       expect(wrapper.state('expansion')).toEqual('tbc');
     });
   });
-
-  describe('When the error state is set', () => {
-    it('Should render an error message', () => {
-      const wrapper = shallow(<WarmaneTab {...defaultProps} />);
-
-      wrapper.setState({ error: true });
-
-      const errorHeading = wrapper.find({ 'data-test-id': 'errorHeading' });
-
-      expect(errorHeading.exists()).toBe(true);
-    });
-  });
 });

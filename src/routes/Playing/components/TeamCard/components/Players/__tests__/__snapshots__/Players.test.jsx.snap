@@ -8,5 +8,8 @@ exports[`The Players instance When rendered with default props should render wit
     size={24}
     sizeUnit="px"
   />
+  <Jss(ErrorMessage)
+    error={false}
+  />
 </div>
 `;
