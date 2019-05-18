@@ -94,16 +94,4 @@ describe('The Players instance', () => {
       expect(global.fetch).toHaveBeenCalledWith(`http://localhost:4000/api/v1/warmane/player/${newProps.players[0].charname}/${newProps.players[0].realm}`);
     });
   });
-
-  describe('When the error state is set', () => {
-    it('Should render an error message', () => {
-      const wrapper = shallow(<Players {...defaultProps} />);
-
-      wrapper.setState({ error: true });
-
-      const errorHeading = wrapper.find({ 'data-test-id': 'errorHeading' });
-
-      expect(errorHeading.exists()).toBe(true);
-    });
-  });
 });

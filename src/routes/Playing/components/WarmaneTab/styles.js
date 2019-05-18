@@ -25,13 +25,14 @@ export default theme => ({
   },
   input: {
     margin: 8,
+    width: 240,
   },
   [theme.media.mobile]: {
     input: {
       margin: '8px auto',
     },
     select: {
-      width: 202,
+      width: 242,
       margin: '0 auto',
     },
   },

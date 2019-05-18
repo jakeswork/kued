@@ -1,0 +1,25 @@
+export default {
+  lastPlayed: {
+    id: '',
+    opponent: '',
+    outcome: 'Victory',
+    rating: '',
+    time: '1 hour ago',
+  },
+  name: 'test',
+  rank: null,
+  realm: '',
+  url: '',
+  players: [{
+    charname: '',
+    damageDone: '',
+    deaths: '',
+    healingDone: '',
+    killingBlows: '',
+    matchmaking_change: '',
+    personal_change: '',
+    realm: '',
+    teamname: '',
+    teamnamerich: '',
+  }],
+};

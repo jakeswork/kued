@@ -1,15 +1,13 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Tabs, TabList, TabPanel } from 'react-tabs';
 import { CircleSpinner } from 'react-spinners-kit';
-import { FiMessageCircle } from 'react-icons/fi';
 import Select from 'react-select';
 
 import { propTypes, defaultProps } from './types';
 import ServerTabLayout from '../../../../layouts/ServerTabLayout';
 import theme from '../../../../utils/theme';
-import Text from '../../../../components/Text';
-import Button from '../../../../components/Button';
 import Input from '../../../../components/Input';
+import ErrorMessage from '../../../../components/ErrorMessage';
 import TabHeading from '../TabHeading';
 import TeamCard from '../TeamCard';
 
@@ -129,7 +127,7 @@ class WarmaneTab extends Component {
             </TabList>
             <Input
               data-test-id="searchInput"
-              placeholder="Search teams"
+              placeholder="Search teams or players"
               className={classes.input}
               onChange={e => this.setState({ searchFilter: e.target.value.toLowerCase().replace(/ /g, '') })}
             />
@@ -164,26 +162,7 @@ class WarmaneTab extends Component {
           <ServerTabLayout>
             { (!loading && !error) && teamCards}
           </ServerTabLayout>
-          {
-            error && (
-              <Fragment>
-                <Text h4 data-test-id="errorHeading">Oops!</Text>
-                <Text bold>
-                  It looks like the server is failing to respond.&nbsp;
-                  Please wait a moment and try again.
-                </Text>
-                <br />
-                <Text>
-                  Is this happening regularly?
-                  Head over to the support
-                  page and let us know.
-                </Text>
-                <Button link="/support" secondary icon={<FiMessageCircle />}>
-                  Support
-                </Button>
-              </Fragment>
-            )
-          }
+          <ErrorMessage error={error} />
           <span className={classes.spinnerWrapper}>
             <CircleSpinner
               loading={loading}

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The ErrorMessage instance When rendered with default props should render without throwing an error 1`] = `
+<Fragment>
+  <Jss(Text)
+    bold={false}
+    caption={false}
+    data-test-id="errorHeading"
+    h1={false}
+    h2={false}
+    h3={false}
+    h4={true}
+    h5={false}
+    link={null}
+    style={Object {}}
+  >
+    Oops!
+  </Jss(Text)>
+  <Jss(Text)
+    bold={true}
+    caption={false}
+    h1={false}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={false}
+    link={null}
+    style={Object {}}
+  >
+    It looks like the server is failing to respond.  Please wait a moment and try again.
+  </Jss(Text)>
+  <br />
+  <Jss(Text)
+    bold={false}
+    caption={false}
+    h1={false}
+    h2={false}
+    h3={false}
+    h4={false}
+    h5={false}
+    link={null}
+    style={Object {}}
+  >
+    Is this happening regularly? Head over to the support page and let us know.
+  </Jss(Text)>
+  <Jss(Button)
+    analyticsLabel={null}
+    danger={false}
+    flat={false}
+    icon={<FiMessageCircle />}
+    link="/support"
+    secondary={true}
+    success={false}
+  >
+    Support
+  </Jss(Button)>
+</Fragment>
+`;

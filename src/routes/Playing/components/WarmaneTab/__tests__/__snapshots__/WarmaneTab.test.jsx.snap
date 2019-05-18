@@ -33,7 +33,7 @@ exports[`The WarmaneTab instance When called with default props should render wi
         className=""
         data-test-id="searchInput"
         onChange={[Function]}
-        placeholder="Search teams"
+        placeholder="Search teams or players"
       />
       <StateManager
         data-test-id="Select"
@@ -70,6 +70,9 @@ exports[`The WarmaneTab instance When called with default props should render wi
     </div>
     <Jss(ServerTabLayout) />
     <Jss(ServerTabLayout) />
+    <Jss(ErrorMessage)
+      error={false}
+    />
     <span>
       <Component
         color="#fc3a3e"
