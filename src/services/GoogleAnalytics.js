@@ -1,5 +1,13 @@
-import ReactGA from 'react-ga';
+import { initialize, pageview as pv, event as ev } from 'react-ga';
 
-ReactGA.initialize('UA-139610124-1');
+const options = {
+  gaOptions: {
+    cookieDomain: 'auto',
+  },
+};
 
-ReactGA.pageview(window.location.pathname + window.location.search);
+export default {
+  init: () => initialize(process.env.REACT_APP_GA_TRACKING_ID, options),
+  pageview: () => pv(window.location.pathname + window.location.search),
+  event: e => ev(e),
+};

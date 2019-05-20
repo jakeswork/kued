@@ -3,6 +3,7 @@
 exports[`The Servers instance When called with default props should render without throwing errors 1`] = `
 <Jss(MainLayout)>
   <Jss(Text)
+    analyticsLabel={null}
     bold={false}
     caption={false}
     h1={true}
@@ -16,6 +17,7 @@ exports[`The Servers instance When called with default props should render witho
     Servers
   </Jss(Text)>
   <Jss(Text)
+    analyticsLabel={null}
     bold={false}
     caption={false}
     h1={false}
@@ -46,6 +48,7 @@ exports[`The Servers instance When called with default props should render witho
     >
       <div>
         <Jss(Text)
+          analyticsLabel={null}
           bold={false}
           caption={false}
           h1={false}
@@ -59,6 +62,7 @@ exports[`The Servers instance When called with default props should render witho
           Warmane
         </Jss(Text)>
         <Jss(Text)
+          analyticsLabel="https://www.warmane.com/"
           bold={false}
           caption={false}
           h1={false}
@@ -95,7 +99,7 @@ exports[`The Servers instance When called with default props should render witho
         green={false}
         key="MoP"
         red={false}
-        tooltip="Development"
+        tooltip="Active"
       >
         MoP
       </Jss(Chip)>
@@ -111,6 +115,7 @@ exports[`The Servers instance When called with default props should render witho
     >
       <div>
         <Jss(Text)
+          analyticsLabel={null}
           bold={false}
           caption={false}
           h1={false}
@@ -124,6 +129,7 @@ exports[`The Servers instance When called with default props should render witho
           WoW Circle
         </Jss(Text)>
         <Jss(Text)
+          analyticsLabel="https://www.wowcircle.com/en/"
           bold={false}
           caption={false}
           h1={false}
@@ -158,6 +164,7 @@ exports[`The Servers instance When called with default props should render witho
     >
       <div>
         <Jss(Text)
+          analyticsLabel={null}
           bold={false}
           caption={false}
           h1={false}
@@ -171,6 +178,7 @@ exports[`The Servers instance When called with default props should render witho
           TwinStar
         </Jss(Text)>
         <Jss(Text)
+          analyticsLabel="https://www.twinstar.cz/"
           bold={false}
           caption={false}
           h1={false}

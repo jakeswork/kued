@@ -122,6 +122,7 @@ describe('The Text instance', () => {
       const newProps = {
         ...defaultProps,
         link: 'test',
+        analyticsLabel: 'Test',
       };
       const wrapper = shallow(<Text {...newProps} />);
       const link = wrapper.find('OutboundLink');

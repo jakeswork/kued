@@ -7,6 +7,7 @@ exports[`The Chip instance When called with default props should render without 
   onMouseLeave={[Function]}
 >
   <Jss(Text)
+    analyticsLabel={null}
     bold={true}
     caption={true}
     h1={false}

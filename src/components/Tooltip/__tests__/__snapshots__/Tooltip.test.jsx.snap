@@ -18,6 +18,7 @@ exports[`The Tooltip instance When called with default props should render witho
     style={Object {}}
   >
     <Jss(Text)
+      analyticsLabel={null}
       bold={true}
       caption={true}
       h1={false}

@@ -3,6 +3,7 @@
 exports[`The Playing instance When called with default props should render without throwing an error 1`] = `
 <Jss(MainLayout)>
   <Jss(Text)
+    analyticsLabel={null}
     bold={false}
     caption={false}
     h1={true}
@@ -16,9 +17,11 @@ exports[`The Playing instance When called with default props should render witho
     Playing
   </Jss(Text)>
   <Tabs
+    data-test-id="Tabs"
     defaultFocus={false}
     defaultIndex={null}
     forceRenderTabPanel={false}
+    onSelect={[Function]}
     selectedIndex={null}
   >
     <TabList

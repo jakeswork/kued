@@ -8,16 +8,16 @@ const defaultProps = {
   classes: {},
   players: [
     {
-      charname: '',
-      damageDone: '',
-      deaths: '',
-      healingDone: '',
-      killingBlows: '',
-      matchmaking_change: '',
-      personal_change: '',
-      realm: '',
-      teamname: '',
-      teamnamerich: '',
+      charname: 'Test',
+      damageDone: '123',
+      deaths: '1',
+      healingDone: '123',
+      killingBlows: '1',
+      matchmaking_change: '123',
+      personal_change: '123',
+      realm: 'Blackrock',
+      teamname: 'Test',
+      teamnamerich: 'Test',
     },
   ],
 };
@@ -77,7 +77,7 @@ describe('The Players instance', () => {
         ...defaultProps,
         players: [{
           ...defaultProps.players[0],
-          charname: 'Apparent',
+          charname: 'Test',
           realm: 'Icecrown',
         }],
       };
@@ -88,7 +88,9 @@ describe('The Players instance', () => {
       });
       jest.spyOn(global, 'fetch').mockImplementation(() => mockFetchPromise);
 
-      shallow(<Players {...newProps} />);
+      const wrapper = shallow(<Players {...newProps} />);
+
+      wrapper.setState({ players: mockResolvedPlayerData });
 
       expect(global.fetch).toHaveBeenCalledTimes(1);
       expect(global.fetch).toHaveBeenCalledWith(`http://localhost:4000/api/v1/warmane/player/${newProps.players[0].charname}/${newProps.players[0].realm}`);

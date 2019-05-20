@@ -15,6 +15,7 @@ const Text = ({
   caption,
   link,
   style,
+  analyticsLabel,
 }) => {
   let styleOverride = style;
 
@@ -37,7 +38,7 @@ const Text = ({
       <OutboundLink
         role="link"
         className={classes.link}
-        eventLabel="externalLink"
+        eventLabel={analyticsLabel}
         to={link}
         target="_blank"
         rel="noopener noreferrer"

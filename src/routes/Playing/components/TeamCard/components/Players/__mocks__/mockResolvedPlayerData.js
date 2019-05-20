@@ -1,6 +1,6 @@
 const player = {
   spec: 'Feral Combat',
-  name: 'Apparent',
+  name: 'Apparen',
   realm: 'Icecrown',
   online: false,
   level: '80',
@@ -18,6 +18,7 @@ export default [
   player,
   {
     ...player,
+    name: 'Other',
     pvpteams: {
       1: {},
     },
