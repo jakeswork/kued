@@ -30,8 +30,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --coverage",
     "eject": "react-scripts eject",
-    "create": "node scripts/createComponent.js",
-    "now-build": "react-scripts build"
+    "create": "node scripts/createComponent.js"
   },
   "jest": {
     "collectCoverageFrom": [
