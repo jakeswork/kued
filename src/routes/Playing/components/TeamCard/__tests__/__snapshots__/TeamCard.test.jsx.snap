@@ -8,6 +8,7 @@ exports[`The TeamCard instance When a team has a loss Should render loss text 1`
 >
   <span>
     <Jss(Text)
+      analyticsLabel={null}
       bold={false}
       caption={false}
       h1={false}
@@ -25,6 +26,7 @@ exports[`The TeamCard instance When a team has a loss Should render loss text 1`
     <div>
       <div>
         <Jss(Text)
+          analyticsLabel={null}
           bold={false}
           caption={true}
           h1={false}
@@ -38,6 +40,7 @@ exports[`The TeamCard instance When a team has a loss Should render loss text 1`
           Rank
         </Jss(Text)>
         <Jss(Text)
+          analyticsLabel={null}
           bold={true}
           caption={false}
           h1={false}
@@ -51,6 +54,7 @@ exports[`The TeamCard instance When a team has a loss Should render loss text 1`
       </div>
       <div>
         <Jss(Text)
+          analyticsLabel={null}
           bold={false}
           caption={true}
           h1={false}
@@ -64,6 +68,7 @@ exports[`The TeamCard instance When a team has a loss Should render loss text 1`
           Rating
         </Jss(Text)>
         <Jss(Text)
+          analyticsLabel={null}
           bold={true}
           caption={false}
           h1={false}
@@ -78,6 +83,7 @@ exports[`The TeamCard instance When a team has a loss Should render loss text 1`
     </div>
     <div>
       <Jss(Text)
+        analyticsLabel={null}
         bold={false}
         caption={false}
         h1={false}
@@ -91,6 +97,7 @@ exports[`The TeamCard instance When a team has a loss Should render loss text 1`
         test
       </Jss(Text)>
       <Jss(Text)
+        analyticsLabel={null}
         bold={true}
         caption={true}
         h1={false}
@@ -106,6 +113,7 @@ exports[`The TeamCard instance When a team has a loss Should render loss text 1`
       className=""
     >
       <Jss(Text)
+        analyticsLabel={null}
         bold={false}
         caption={true}
         h1={false}
@@ -119,6 +127,7 @@ exports[`The TeamCard instance When a team has a loss Should render loss text 1`
         Last Played
       </Jss(Text)>
       <Jss(Text)
+        analyticsLabel={null}
         bold={true}
         caption={false}
         h1={false}
@@ -175,6 +184,7 @@ exports[`The TeamCard instance When rendered with default props should render wi
 >
   <span>
     <Jss(Text)
+      analyticsLabel={null}
       bold={false}
       caption={false}
       h1={false}
@@ -192,6 +202,7 @@ exports[`The TeamCard instance When rendered with default props should render wi
     <div>
       <div>
         <Jss(Text)
+          analyticsLabel={null}
           bold={false}
           caption={true}
           h1={false}
@@ -205,6 +216,7 @@ exports[`The TeamCard instance When rendered with default props should render wi
           Rank
         </Jss(Text)>
         <Jss(Text)
+          analyticsLabel={null}
           bold={true}
           caption={false}
           h1={false}
@@ -218,6 +230,7 @@ exports[`The TeamCard instance When rendered with default props should render wi
       </div>
       <div>
         <Jss(Text)
+          analyticsLabel={null}
           bold={false}
           caption={true}
           h1={false}
@@ -231,6 +244,7 @@ exports[`The TeamCard instance When rendered with default props should render wi
           Rating
         </Jss(Text)>
         <Jss(Text)
+          analyticsLabel={null}
           bold={true}
           caption={false}
           h1={false}
@@ -245,6 +259,7 @@ exports[`The TeamCard instance When rendered with default props should render wi
     </div>
     <div>
       <Jss(Text)
+        analyticsLabel={null}
         bold={false}
         caption={false}
         h1={false}
@@ -258,6 +273,7 @@ exports[`The TeamCard instance When rendered with default props should render wi
         test
       </Jss(Text)>
       <Jss(Text)
+        analyticsLabel={null}
         bold={true}
         caption={true}
         h1={false}
@@ -273,6 +289,7 @@ exports[`The TeamCard instance When rendered with default props should render wi
       className=""
     >
       <Jss(Text)
+        analyticsLabel={null}
         bold={false}
         caption={true}
         h1={false}
@@ -286,6 +303,7 @@ exports[`The TeamCard instance When rendered with default props should render wi
         Last Played
       </Jss(Text)>
       <Jss(Text)
+        analyticsLabel={null}
         bold={true}
         caption={false}
         h1={false}

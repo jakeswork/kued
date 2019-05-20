@@ -10,6 +10,7 @@ import Input from '../../../../components/Input';
 import ErrorMessage from '../../../../components/ErrorMessage';
 import TabHeading from '../TabHeading';
 import TeamCard from '../TeamCard';
+import GoogleAnalytics from '../../../../services/GoogleAnalytics';
 
 class WarmaneTab extends Component {
   static propTypes = propTypes;
@@ -42,15 +43,27 @@ class WarmaneTab extends Component {
     this.fetchTeamData();
   }
 
-  onChangeDropdown = ({ value }) => this.setState(
-    ({ bracket: value }),
-    () => this.fetchTeamData(),
-  );
+  onChangeDropdown = ({ value }) => {
+    GoogleAnalytics.event({
+      action: 'Click',
+      category: 'Navigate',
+      label: `Open ${value} tab`,
+    });
 
-  onChangeTab = tab => this.setState(
-    ({ expansion: tab > 0 ? 'wotlk' : 'tbc' }),
-    () => this.fetchTeamData(),
-  );
+    return this.setState(({ bracket: value }), () => this.fetchTeamData());
+  }
+
+  onChangeTab = (tab) => {
+    const expansion = tab > 0 ? 'wotlk' : 'tbc';
+
+    GoogleAnalytics.event({
+      action: 'Click',
+      category: 'Navigate',
+      label: `Open ${expansion} tab`,
+    });
+
+    return this.setState(({ expansion }), () => this.fetchTeamData());
+  }
 
   fetchTeamData = async () => {
     const { expansion, bracket } = this.state;
@@ -129,7 +142,17 @@ class WarmaneTab extends Component {
               data-test-id="searchInput"
               placeholder="Search teams or players"
               className={classes.input}
-              onChange={e => this.setState({ searchFilter: e.target.value.toLowerCase().replace(/ /g, '') })}
+              onChange={(e) => {
+                const value = e.target.value.toLowerCase().replace(/ /g, '');
+
+                GoogleAnalytics.event({
+                  action: e.type,
+                  label: 'Filter Teams',
+                  category: 'Search',
+                });
+
+                return this.setState({ searchFilter: value });
+              }}
             />
             <Select
               data-test-id="Select"

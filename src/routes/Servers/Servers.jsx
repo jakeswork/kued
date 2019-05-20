@@ -7,6 +7,7 @@ import Text from '../../components/Text';
 import Card from '../../components/Card';
 import Chip from '../../components/Chip';
 import Input from '../../components/Input';
+import GoogleAnalytics from '../../services/GoogleAnalytics';
 
 class Servers extends Component {
   static propTypes = propTypes;
@@ -31,7 +32,18 @@ class Servers extends Component {
         <Input
           data-test-id="searchInput"
           placeholder="Search servers"
-          onChange={e => this.setState({ searchInput: e.target.value.toLowerCase().replace(/ /g, '') })}
+          onChange={(e) => {
+            const value = e.target.value.toLowerCase().replace(/ /g, '');
+
+            GoogleAnalytics.event({
+              action: e.type,
+              label: 'Filter Servers',
+              category: 'Search',
+              value,
+            });
+
+            return this.setState({ searchInput: value });
+          }}
         />
         <div className={classes.grid}>
           {
@@ -40,7 +52,7 @@ class Servers extends Component {
                 <Card style={{ width: 275 }} key={server.name}>
                   <div className={classes.serverInfo}>
                     <Text h4>{ server.name }</Text>
-                    <Text link={server.url}>
+                    <Text link={server.url} analyticsLabel={server.url}>
                       { server.url }
                     </Text>
                   </div>

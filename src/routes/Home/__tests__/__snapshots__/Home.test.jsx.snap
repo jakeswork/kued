@@ -5,6 +5,7 @@ exports[`The Home instance when called with default props should render without 
   <Jss(TopNavigation) />
   <main>
     <Jss(Text)
+      analyticsLabel={null}
       bold={false}
       caption={false}
       h1={true}
@@ -22,6 +23,7 @@ exports[`The Home instance when called with default props should render without 
       Elevate your arena experience.
     </Jss(Text)>
     <Jss(Text)
+      analyticsLabel={null}
       bold={false}
       caption={false}
       h1={false}

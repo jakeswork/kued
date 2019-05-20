@@ -8,12 +8,25 @@ import { propTypes, defaultProps } from './types';
 import Card from '../../../../components/Card';
 import Text from '../../../../components/Text';
 import Players from './components/Players';
+import GoogleAnalytics from '../../../../services/GoogleAnalytics';
 
 const TeamCard = ({ classes, team }) => {
   const [opened, setOpened] = useState(false);
 
   return (
-    <Card className={classes.card} onClick={() => setOpened(!opened)} data-test-id="Card">
+    <Card
+      className={classes.card}
+      onClick={() => {
+        GoogleAnalytics.event({
+          action: 'Click',
+          category: 'Browse',
+          label: 'Toggle Players Card',
+        });
+
+        return setOpened(!opened);
+      }}
+      data-test-id="Card"
+    >
       <span className={classes.outcome}>
         <Text>
           { `${team.lastPlayed.outcome === 'Loss' ? 'Lost' : 'Won'} their last game` }

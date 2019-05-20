@@ -43,6 +43,7 @@ exports[`The SideMenu instance When called with default properties should render
     </div>
     <div>
       <Jss(Text)
+        analyticsLabel={null}
         bold={false}
         caption={true}
         h1={false}

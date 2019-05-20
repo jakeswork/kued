@@ -11,6 +11,7 @@ exports[`The TabHeading instance When rendered with default props should render 
   selectedClassName="react-tabs__tab--selected"
 >
   <Jss(Text)
+    analyticsLabel={null}
     bold={true}
     caption={false}
     h1={false}

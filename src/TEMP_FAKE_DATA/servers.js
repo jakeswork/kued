@@ -21,7 +21,7 @@ export default [
       },
       {
         name: 'MoP',
-        status: 'Development',
+        status: 'Active',
       },
     ],
   },

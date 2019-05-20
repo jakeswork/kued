@@ -17,6 +17,7 @@ export const propTypes = {
   children: node,
   classes: shape({}).isRequired,
   style: shape({}),
+  analyticsLabel: string,
 };
 
 export const defaultProps = {
@@ -30,4 +31,5 @@ export const defaultProps = {
   caption: false,
   children: null,
   style: {},
+  analyticsLabel: null,
 };

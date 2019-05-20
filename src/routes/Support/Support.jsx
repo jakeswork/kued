@@ -82,7 +82,7 @@ class Support extends Component {
           <Button
             icon={<FiHeart />}
             success
-            analyticsLabel="donationLink"
+            analyticsLabel="Donation"
             link="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JG5ENWX7ADSKL&source=url"
           >
             Donate via PayPal
@@ -100,7 +100,7 @@ class Support extends Component {
             danger
             link="https://forms.gle/gu9fpS2RZytgzSbj9"
             icon={<FiAlertTriangle />}
-            analyticsLabel="bugReportLink"
+            analyticsLabel="Bug Report"
           >
             Report a bug
           </Button>
@@ -124,7 +124,7 @@ class Support extends Component {
           <Button
             link="https://www.twitch.tv/apparentt/"
             icon={<FiMessageCircle />}
-            analyticsLabel="twitchMessageLink"
+            analyticsLabel="Twitch"
           >
             Contact
           </Button>

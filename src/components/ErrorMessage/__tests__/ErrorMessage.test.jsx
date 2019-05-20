@@ -13,4 +13,16 @@ describe('The ErrorMessage instance', () => {
       expect(wrapper).toMatchSnapshot();
     });
   });
+
+  describe('When the error prop is false', () => {
+    it('Should render null', () => {
+      const newProps = {
+        ...defaultProps,
+        error: false,
+      };
+      const wrapper = shallow(<ErrorMessage {...newProps} />);
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
 });

@@ -1,29 +1,37 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'react-jss';
 import 'typeface-karla';
 
 import './reset.css';
 import './base.css';
-import './services/GoogleAnalytics';
+import GoogleAnalytics from './services/GoogleAnalytics';
 import theme from './utils/theme';
-import Home from './routes/Home';
-import Support from './routes/Support';
-import Servers from './routes/Servers';
-import Playing from './routes/Playing';
+import routes from './routes';
 
-const App = () => (
+GoogleAnalytics.init();
+
+render(
   <ThemeProvider theme={theme}>
-    <BrowserRouter>
+    <Router>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/support" component={Support} />
-        <Route exact path="/servers" component={Servers} />
-        <Route exact path="/playing" component={Playing} />
-      </Switch>
-    </BrowserRouter>
-  </ThemeProvider>
-);
+        {
+          routes.map(({ path, Component }) => (
+            <Route
+              key={path}
+              path={path}
+              exact
+              render={() => {
+                GoogleAnalytics.pageview();
 
-render(<App />, document.getElementById('root'));
+                return <Component />;
+              }}
+            />
+          ))
+        }
+      </Switch>
+    </Router>
+  </ThemeProvider>,
+  document.getElementById('root'),
+);
