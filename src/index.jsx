@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'react-jss';
+import { Helmet } from 'react-helmet';
 import 'typeface-karla';
 
 import './reset.css';
@@ -17,7 +18,7 @@ render(
     <Router>
       <Switch>
         {
-          routes.map(({ path, Component }) => (
+          routes.map(({ path, Component, title }) => (
             <Route
               key={path}
               path={path}
@@ -25,7 +26,16 @@ render(
               render={() => {
                 GoogleAnalytics.pageview();
 
-                return <Component />;
+                return (
+                  <Fragment>
+                    <Helmet>
+                      <title>
+                        { title }
+                      </title>
+                    </Helmet>
+                    <Component />
+                  </Fragment>
+                );
               }}
             />
           ))

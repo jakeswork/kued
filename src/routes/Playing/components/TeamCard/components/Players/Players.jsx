@@ -34,7 +34,7 @@ class Players extends Component {
 
   fetchPlayerData = async (player) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/v1/warmane/player/${player.charname}/${player.realm}`);
+      const response = await fetch(`${process.env.REACT_APP_KUED_API}/warmane/player/${player.charname}/${player.realm}`);
 
       return await response.json();
     } catch (error) /* istanbul ignore next */ {

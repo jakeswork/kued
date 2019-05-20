@@ -36,10 +36,9 @@ class Servers extends Component {
             const value = e.target.value.toLowerCase().replace(/ /g, '');
 
             GoogleAnalytics.event({
-              action: e.type,
-              label: 'Filter Servers',
+              action: 'Input',
+              label: `Filter Servers by ${value}`,
               category: 'Search',
-              value,
             });
 
             return this.setState({ searchInput: value });
