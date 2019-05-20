@@ -70,7 +70,7 @@ class WarmaneTab extends Component {
 
     this.setState(({ loading: true }), async () => {
       try {
-        const response = await fetch(`http://localhost:4000/api/v1/warmane/${expansion}/${bracket}/`);
+        const response = await fetch(`${process.env.REACT_APP_KUED_API}/warmane/${expansion}/${bracket}/`);
         const teams = await response.json();
         const initialSort = (a, b) => {
           const compA = a.lastPlayed.time.split(' ')[0];
@@ -146,8 +146,8 @@ class WarmaneTab extends Component {
                 const value = e.target.value.toLowerCase().replace(/ /g, '');
 
                 GoogleAnalytics.event({
-                  action: e.type,
-                  label: 'Filter Teams',
+                  action: 'Input',
+                  label: `Filter teams by ${value}`,
                   category: 'Search',
                 });
 
